@@ -1,0 +1,16 @@
+2022-09-11 15:00:53 error: Authentication token missing
+2022-09-11 15:02:51 error: uncaughtException: listen EADDRINUSE: address already in use :::3005
+Error: listen EADDRINUSE: address already in use :::3005
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Function.listen (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\express@4.18.1\node_modules\express\lib\application.js:635:24)
+    at App.listen (C:\Users\palehazy\CodingFiles\GRAPHQL\first\src\app.ts:35:14)
+    at Object.<anonymous> (C:\Users\palehazy\CodingFiles\GRAPHQL\first\src\server.ts:11:5)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module.m._compile (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\ts-node@10.9.1_gj2m7dhkfp22rdv4cb6jpqoqey\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\ts-node@10.9.1_gj2m7dhkfp22rdv4cb6jpqoqey\node_modules\ts-node\src\index.ts:1621:12)
+2022-09-11 15:08:03 error: Authentication token missing
+2022-09-11 15:09:50 error: Authentication token missing
+2022-09-11 15:26:44 error: Authentication token missing

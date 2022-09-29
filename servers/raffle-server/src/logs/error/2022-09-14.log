@@ -1,0 +1,18 @@
+2022-09-14 14:30:08 error: Variable "$ticketData" got invalid value { raffleId: 1 }; Field "valueInDollars" of required type "Float!" was not provided.
+2022-09-14 14:30:26 error: Variable "$ticketData" got invalid value { raffleId: 1 }; Field "valueInDollars" of required type "Float!" was not provided.
+2022-09-14 14:30:31 error: null value in column "valueInDollars" of relation "ticket_entity" violates not-null constraint
+2022-09-14 14:31:02 error: null value in column "isSold" of relation "ticket_entity" violates not-null constraint
+2022-09-14 14:33:46 error: null value in column "isSold" of relation "ticket_entity" violates not-null constraint
+2022-09-14 14:33:53 error: null value in column "isSold" of relation "ticket_entity" violates not-null constraint
+2022-09-14 14:34:26 error: null value in column "isSold" of relation "ticket_entity" violates not-null constraint
+2022-09-14 14:34:27 error: null value in column "isSold" of relation "ticket_entity" violates not-null constraint
+2022-09-14 14:35:30 error: null value in column "isSold" of relation "ticket_entity" violates not-null constraint
+2022-09-14 14:37:08 error: null value in column "isSold" of relation "ticket_entity" violates not-null constraint
+2022-09-14 14:37:29 error: null value in column "isSold" of relation "ticket_entity" violates not-null constraint
+2022-09-14 14:39:14 error: relation "raffle_entity" does not exist
+2022-09-14 14:39:22 error: relation "raffle_entity" does not exist
+2022-09-14 14:40:11 error: null value in column "isSold" of relation "ticket_entity" violates not-null constraint
+2022-09-14 14:44:40 error: null value in column "isSold" of relation "ticket_entity" violates not-null constraint
+2022-09-14 21:53:01 error: Cannot return null for non-nullable field Query.tickets.
+2022-09-14 21:54:23 error: Cannot return null for non-nullable field Query.tickets.
+2022-09-14 21:57:53 error: Cannot return null for non-nullable field Query.tickets.

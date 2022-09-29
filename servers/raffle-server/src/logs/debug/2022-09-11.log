@@ -1,0 +1,1817 @@
+2022-09-11 10:22:21 info: authMiddleware
+2022-09-11 10:22:21 info: 
+    query IntrospectionQuery {
+      __schema {
+        
+        queryType { name }
+        mutationType { name }
+        subscriptionType { name }
+        types {
+          ...FullType
+        }
+        directives {
+          name
+          description
+          
+          locations
+          args {
+            ...InputValue
+          }
+        }
+      }
+    }
+
+    fragment FullType on __Type {
+      kind
+      name
+      description
+      
+      fields(includeDeprecated: true) {
+        name
+        description
+        args {
+          ...InputValue
+        }
+        type {
+          ...TypeRef
+        }
+        isDeprecated
+        deprecationReason
+      }
+      inputFields {
+        ...InputValue
+      }
+      interfaces {
+        ...TypeRef
+      }
+      enumValues(includeDeprecated: true) {
+        name
+        description
+        isDeprecated
+        deprecationReason
+      }
+      possibleTypes {
+        ...TypeRef
+      }
+    }
+
+    fragment InputValue on __InputValue {
+      name
+      description
+      type { ...TypeRef }
+      defaultValue
+      
+      
+    }
+
+    fragment TypeRef on __Type {
+      kind
+      name
+      ofType {
+        kind
+        name
+        ofType {
+          kind
+          name
+          ofType {
+            kind
+            name
+            ofType {
+              kind
+              name
+              ofType {
+                kind
+                name
+                ofType {
+                  kind
+                  name
+                  ofType {
+                    kind
+                    name
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  
+2022-09-11 10:22:22 info: authMiddleware
+2022-09-11 10:22:22 info: 
+    query IntrospectionQuery {
+      __schema {
+        
+        queryType { name }
+        mutationType { name }
+        subscriptionType { name }
+        types {
+          ...FullType
+        }
+        directives {
+          name
+          description
+          
+          locations
+          args(includeDeprecated: true) {
+            ...InputValue
+          }
+        }
+      }
+    }
+
+    fragment FullType on __Type {
+      kind
+      name
+      description
+      
+      fields(includeDeprecated: true) {
+        name
+        description
+        args(includeDeprecated: true) {
+          ...InputValue
+        }
+        type {
+          ...TypeRef
+        }
+        isDeprecated
+        deprecationReason
+      }
+      inputFields(includeDeprecated: true) {
+        ...InputValue
+      }
+      interfaces {
+        ...TypeRef
+      }
+      enumValues(includeDeprecated: true) {
+        name
+        description
+        isDeprecated
+        deprecationReason
+      }
+      possibleTypes {
+        ...TypeRef
+      }
+    }
+
+    fragment InputValue on __InputValue {
+      name
+      description
+      type { ...TypeRef }
+      defaultValue
+      isDeprecated
+      deprecationReason
+    }
+
+    fragment TypeRef on __Type {
+      kind
+      name
+      ofType {
+        kind
+        name
+        ofType {
+          kind
+          name
+          ofType {
+            kind
+            name
+            ofType {
+              kind
+              name
+              ofType {
+                kind
+                name
+                ofType {
+                  kind
+                  name
+                  ofType {
+                    kind
+                    name
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  
+2022-09-11 10:22:31 info: authMiddleware
+2022-09-11 10:22:31 info: 
+    query IntrospectionQuery {
+      __schema {
+        
+        queryType { name }
+        mutationType { name }
+        subscriptionType { name }
+        types {
+          ...FullType
+        }
+        directives {
+          name
+          description
+          
+          locations
+          args {
+            ...InputValue
+          }
+        }
+      }
+    }
+
+    fragment FullType on __Type {
+      kind
+      name
+      description
+      
+      fields(includeDeprecated: true) {
+        name
+        description
+        args {
+          ...InputValue
+        }
+        type {
+          ...TypeRef
+        }
+        isDeprecated
+        deprecationReason
+      }
+      inputFields {
+        ...InputValue
+      }
+      interfaces {
+        ...TypeRef
+      }
+      enumValues(includeDeprecated: true) {
+        name
+        description
+        isDeprecated
+        deprecationReason
+      }
+      possibleTypes {
+        ...TypeRef
+      }
+    }
+
+    fragment InputValue on __InputValue {
+      name
+      description
+      type { ...TypeRef }
+      defaultValue
+      
+      
+    }
+
+    fragment TypeRef on __Type {
+      kind
+      name
+      ofType {
+        kind
+        name
+        ofType {
+          kind
+          name
+          ofType {
+            kind
+            name
+            ofType {
+              kind
+              name
+              ofType {
+                kind
+                name
+                ofType {
+                  kind
+                  name
+                  ofType {
+                    kind
+                    name
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  
+2022-09-11 10:22:31 info: authMiddleware
+2022-09-11 10:22:31 info: 
+    query IntrospectionQuery {
+      __schema {
+        
+        queryType { name }
+        mutationType { name }
+        subscriptionType { name }
+        types {
+          ...FullType
+        }
+        directives {
+          name
+          description
+          
+          locations
+          args(includeDeprecated: true) {
+            ...InputValue
+          }
+        }
+      }
+    }
+
+    fragment FullType on __Type {
+      kind
+      name
+      description
+      
+      fields(includeDeprecated: true) {
+        name
+        description
+        args(includeDeprecated: true) {
+          ...InputValue
+        }
+        type {
+          ...TypeRef
+        }
+        isDeprecated
+        deprecationReason
+      }
+      inputFields(includeDeprecated: true) {
+        ...InputValue
+      }
+      interfaces {
+        ...TypeRef
+      }
+      enumValues(includeDeprecated: true) {
+        name
+        description
+        isDeprecated
+        deprecationReason
+      }
+      possibleTypes {
+        ...TypeRef
+      }
+    }
+
+    fragment InputValue on __InputValue {
+      name
+      description
+      type { ...TypeRef }
+      defaultValue
+      isDeprecated
+      deprecationReason
+    }
+
+    fragment TypeRef on __Type {
+      kind
+      name
+      ofType {
+        kind
+        name
+        ofType {
+          kind
+          name
+          ofType {
+            kind
+            name
+            ofType {
+              kind
+              name
+              ofType {
+                kind
+                name
+                ofType {
+                  kind
+                  name
+                  ofType {
+                    kind
+                    name
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  
+2022-09-11 10:22:37 info: authMiddleware
+2022-09-11 10:22:37 info: mutation G($userData: CreateUserDto!) {
+  createUser(userData: $userData) {
+    id
+  }
+}
+
+2022-09-11 14:53:45 info: =================================
+2022-09-11 14:53:45 info: ======= ENV: development =======
+2022-09-11 14:53:45 info: 🚀 App listening on the port 3005
+2022-09-11 14:53:45 info: 🎮 http://localhost:3005/graphql
+2022-09-11 14:53:45 info: =================================
+2022-09-11 15:00:01 info: =================================
+2022-09-11 15:00:01 info: ======= ENV: development =======
+2022-09-11 15:00:01 info: 🚀 App listening on the port 3005
+2022-09-11 15:00:01 info: 🎮 http://localhost:3005/graphql
+2022-09-11 15:00:01 info: =================================
+2022-09-11 15:00:07 info: authMiddleware
+2022-09-11 15:00:07 info: 
+    query IntrospectionQuery {
+      __schema {
+        
+        queryType { name }
+        mutationType { name }
+        subscriptionType { name }
+        types {
+          ...FullType
+        }
+        directives {
+          name
+          description
+          
+          locations
+          args {
+            ...InputValue
+          }
+        }
+      }
+    }
+
+    fragment FullType on __Type {
+      kind
+      name
+      description
+      
+      fields(includeDeprecated: true) {
+        name
+        description
+        args {
+          ...InputValue
+        }
+        type {
+          ...TypeRef
+        }
+        isDeprecated
+        deprecationReason
+      }
+      inputFields {
+        ...InputValue
+      }
+      interfaces {
+        ...TypeRef
+      }
+      enumValues(includeDeprecated: true) {
+        name
+        description
+        isDeprecated
+        deprecationReason
+      }
+      possibleTypes {
+        ...TypeRef
+      }
+    }
+
+    fragment InputValue on __InputValue {
+      name
+      description
+      type { ...TypeRef }
+      defaultValue
+      
+      
+    }
+
+    fragment TypeRef on __Type {
+      kind
+      name
+      ofType {
+        kind
+        name
+        ofType {
+          kind
+          name
+          ofType {
+            kind
+            name
+            ofType {
+              kind
+              name
+              ofType {
+                kind
+                name
+                ofType {
+                  kind
+                  name
+                  ofType {
+                    kind
+                    name
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  
+2022-09-11 15:00:07 info: authMiddleware
+2022-09-11 15:00:07 info: 
+    query IntrospectionQuery {
+      __schema {
+        
+        queryType { name }
+        mutationType { name }
+        subscriptionType { name }
+        types {
+          ...FullType
+        }
+        directives {
+          name
+          description
+          
+          locations
+          args(includeDeprecated: true) {
+            ...InputValue
+          }
+        }
+      }
+    }
+
+    fragment FullType on __Type {
+      kind
+      name
+      description
+      
+      fields(includeDeprecated: true) {
+        name
+        description
+        args(includeDeprecated: true) {
+          ...InputValue
+        }
+        type {
+          ...TypeRef
+        }
+        isDeprecated
+        deprecationReason
+      }
+      inputFields(includeDeprecated: true) {
+        ...InputValue
+      }
+      interfaces {
+        ...TypeRef
+      }
+      enumValues(includeDeprecated: true) {
+        name
+        description
+        isDeprecated
+        deprecationReason
+      }
+      possibleTypes {
+        ...TypeRef
+      }
+    }
+
+    fragment InputValue on __InputValue {
+      name
+      description
+      type { ...TypeRef }
+      defaultValue
+      isDeprecated
+      deprecationReason
+    }
+
+    fragment TypeRef on __Type {
+      kind
+      name
+      ofType {
+        kind
+        name
+        ofType {
+          kind
+          name
+          ofType {
+            kind
+            name
+            ofType {
+              kind
+              name
+              ofType {
+                kind
+                name
+                ofType {
+                  kind
+                  name
+                  ofType {
+                    kind
+                    name
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  
+2022-09-11 15:00:53 info: authMiddleware
+2022-09-11 15:00:53 error: Authentication token missing
+2022-09-11 15:00:53 info: mutation G                            {
+  logout {
+    id
+  }
+}
+
+2022-09-11 15:02:34 info: =================================
+2022-09-11 15:02:34 info: ======= ENV: development =======
+2022-09-11 15:02:34 info: 🚀 App listening on the port 3005
+2022-09-11 15:02:34 info: 🎮 http://localhost:3005/graphql
+2022-09-11 15:02:34 info: =================================
+2022-09-11 15:03:23 info: =================================
+2022-09-11 15:03:23 info: ======= ENV: development =======
+2022-09-11 15:03:23 info: 🚀 App listening on the port 3005
+2022-09-11 15:03:23 info: 🎮 http://localhost:3005/graphql
+2022-09-11 15:03:23 info: =================================
+2022-09-11 15:04:27 info: authMiddleware
+2022-09-11 15:08:03 error: Authentication token missing
+2022-09-11 15:08:03 info: mutation Logout {
+  logout {
+    id
+    email
+    password
+  }
+}
+2022-09-11 15:08:26 info: authMiddleware
+2022-09-11 15:09:50 error: Authentication token missing
+2022-09-11 15:09:50 info: mutation Logout {
+  logout {
+    id
+    email
+    password
+  }
+}
+2022-09-11 15:10:33 info: =================================
+2022-09-11 15:10:33 info: ======= ENV: development =======
+2022-09-11 15:10:33 info: 🚀 App listening on the port 3005
+2022-09-11 15:10:33 info: 🎮 http://localhost:3005/graphql
+2022-09-11 15:10:33 info: =================================
+2022-09-11 15:14:01 info: authMiddleware
+2022-09-11 15:14:01 info: mutation Login($userData: CreateUserDto!) {
+  login(userData: $userData) {
+    
+  email
+  id
+  password
+}
+}
+2022-09-11 15:22:57 info: =================================
+2022-09-11 15:22:57 info: ======= ENV: development =======
+2022-09-11 15:22:57 info: 🚀 App listening on the port 3005
+2022-09-11 15:22:57 info: 🎮 http://localhost:3005/graphql
+2022-09-11 15:22:57 info: =================================
+2022-09-11 15:23:20 info: =================================
+2022-09-11 15:23:20 info: ======= ENV: development =======
+2022-09-11 15:23:20 info: 🚀 App listening on the port 3005
+2022-09-11 15:23:20 info: 🎮 http://localhost:3005/graphql
+2022-09-11 15:23:20 info: =================================
+2022-09-11 15:24:13 info: =================================
+2022-09-11 15:24:13 info: ======= ENV: development =======
+2022-09-11 15:24:13 info: 🚀 App listening on the port 3005
+2022-09-11 15:24:13 info: 🎮 http://localhost:3005/graphql
+2022-09-11 15:24:13 info: =================================
+2022-09-11 15:24:36 info: =================================
+2022-09-11 15:24:37 info: ======= ENV: development =======
+2022-09-11 15:24:37 info: 🚀 App listening on the port 3005
+2022-09-11 15:24:37 info: 🎮 http://localhost:3005/graphql
+2022-09-11 15:24:37 info: =================================
+2022-09-11 15:25:13 info: authMiddleware
+2022-09-11 15:25:13 info: 
+    query IntrospectionQuery {
+      __schema {
+        
+        queryType { name }
+        mutationType { name }
+        subscriptionType { name }
+        types {
+          ...FullType
+        }
+        directives {
+          name
+          description
+          
+          locations
+          args {
+            ...InputValue
+          }
+        }
+      }
+    }
+
+    fragment FullType on __Type {
+      kind
+      name
+      description
+      
+      fields(includeDeprecated: true) {
+        name
+        description
+        args {
+          ...InputValue
+        }
+        type {
+          ...TypeRef
+        }
+        isDeprecated
+        deprecationReason
+      }
+      inputFields {
+        ...InputValue
+      }
+      interfaces {
+        ...TypeRef
+      }
+      enumValues(includeDeprecated: true) {
+        name
+        description
+        isDeprecated
+        deprecationReason
+      }
+      possibleTypes {
+        ...TypeRef
+      }
+    }
+
+    fragment InputValue on __InputValue {
+      name
+      description
+      type { ...TypeRef }
+      defaultValue
+      
+      
+    }
+
+    fragment TypeRef on __Type {
+      kind
+      name
+      ofType {
+        kind
+        name
+        ofType {
+          kind
+          name
+          ofType {
+            kind
+            name
+            ofType {
+              kind
+              name
+              ofType {
+                kind
+                name
+                ofType {
+                  kind
+                  name
+                  ofType {
+                    kind
+                    name
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  
+2022-09-11 15:25:14 info: authMiddleware
+2022-09-11 15:25:14 info: 
+    query IntrospectionQuery {
+      __schema {
+        
+        queryType { name }
+        mutationType { name }
+        subscriptionType { name }
+        types {
+          ...FullType
+        }
+        directives {
+          name
+          description
+          
+          locations
+          args(includeDeprecated: true) {
+            ...InputValue
+          }
+        }
+      }
+    }
+
+    fragment FullType on __Type {
+      kind
+      name
+      description
+      
+      fields(includeDeprecated: true) {
+        name
+        description
+        args(includeDeprecated: true) {
+          ...InputValue
+        }
+        type {
+          ...TypeRef
+        }
+        isDeprecated
+        deprecationReason
+      }
+      inputFields(includeDeprecated: true) {
+        ...InputValue
+      }
+      interfaces {
+        ...TypeRef
+      }
+      enumValues(includeDeprecated: true) {
+        name
+        description
+        isDeprecated
+        deprecationReason
+      }
+      possibleTypes {
+        ...TypeRef
+      }
+    }
+
+    fragment InputValue on __InputValue {
+      name
+      description
+      type { ...TypeRef }
+      defaultValue
+      isDeprecated
+      deprecationReason
+    }
+
+    fragment TypeRef on __Type {
+      kind
+      name
+      ofType {
+        kind
+        name
+        ofType {
+          kind
+          name
+          ofType {
+            kind
+            name
+            ofType {
+              kind
+              name
+              ofType {
+                kind
+                name
+                ofType {
+                  kind
+                  name
+                  ofType {
+                    kind
+                    name
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  
+2022-09-11 15:25:31 info: authMiddleware
+2022-09-11 15:25:31 info: mutation Login($userData: CreateUserDto!) {
+  login(userData: $userData) {
+    
+  email
+  id
+  password
+}
+}
+2022-09-11 15:26:30 info: authMiddleware
+2022-09-11 15:26:44 error: Authentication token missing
+2022-09-11 15:26:44 info: mutation Mutation {
+  logout {
+    email
+  }
+}
+2022-09-11 15:27:52 info: =================================
+2022-09-11 15:27:52 info: ======= ENV: development =======
+2022-09-11 15:27:52 info: 🚀 App listening on the port 3005
+2022-09-11 15:27:52 info: 🎮 http://localhost:3005/graphql
+2022-09-11 15:27:52 info: =================================
+2022-09-11 16:25:18 info: authMiddleware
+2022-09-11 16:25:18 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+  }
+}
+2022-09-11 16:25:28 info: authMiddleware
+2022-09-11 16:25:28 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+  }
+}
+2022-09-11 16:25:29 info: authMiddleware
+2022-09-11 16:25:29 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+  }
+}
+2022-09-11 16:25:29 info: authMiddleware
+2022-09-11 16:25:29 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+  }
+}
+2022-09-11 16:25:30 info: authMiddleware
+2022-09-11 16:25:30 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+  }
+}
+2022-09-11 16:25:31 info: authMiddleware
+2022-09-11 16:25:31 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+  }
+}
+2022-09-11 16:25:31 info: authMiddleware
+2022-09-11 16:25:31 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+  }
+}
+2022-09-11 16:25:32 info: authMiddleware
+2022-09-11 16:25:32 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+  }
+}
+2022-09-11 16:25:32 info: authMiddleware
+2022-09-11 16:25:32 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+  }
+}
+2022-09-11 16:25:33 info: authMiddleware
+2022-09-11 16:25:33 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+  }
+}
+2022-09-11 16:25:34 info: authMiddleware
+2022-09-11 16:25:34 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+  }
+}
+2022-09-11 16:25:34 info: authMiddleware
+2022-09-11 16:25:34 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+  }
+}
+2022-09-11 16:25:35 info: authMiddleware
+2022-09-11 16:25:35 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+  }
+}
+2022-09-11 16:25:35 info: authMiddleware
+2022-09-11 16:25:35 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+  }
+}
+2022-09-11 16:25:36 info: authMiddleware
+2022-09-11 16:25:36 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+  }
+}
+2022-09-11 16:25:37 info: authMiddleware
+2022-09-11 16:25:37 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+  }
+}
+2022-09-11 16:25:37 info: authMiddleware
+2022-09-11 16:25:37 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+  }
+}
+2022-09-11 16:25:38 info: authMiddleware
+2022-09-11 16:25:38 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+  }
+}
+2022-09-11 16:25:39 info: authMiddleware
+2022-09-11 16:25:39 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+  }
+}
+2022-09-11 16:25:51 info: authMiddleware
+2022-09-11 16:25:51 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:25:52 info: authMiddleware
+2022-09-11 16:25:52 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:25:52 info: authMiddleware
+2022-09-11 16:25:52 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:25:52 info: authMiddleware
+2022-09-11 16:25:52 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:25:52 info: authMiddleware
+2022-09-11 16:25:53 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:25:53 info: authMiddleware
+2022-09-11 16:25:53 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:25:53 info: authMiddleware
+2022-09-11 16:25:53 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:25:53 info: authMiddleware
+2022-09-11 16:25:53 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:25:53 info: authMiddleware
+2022-09-11 16:25:54 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:25:54 info: authMiddleware
+2022-09-11 16:25:54 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:25:54 info: authMiddleware
+2022-09-11 16:25:54 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:25:54 info: authMiddleware
+2022-09-11 16:25:54 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:25:54 info: authMiddleware
+2022-09-11 16:25:54 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:25:55 info: authMiddleware
+2022-09-11 16:25:55 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:25:55 info: authMiddleware
+2022-09-11 16:25:55 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:25:55 info: authMiddleware
+2022-09-11 16:25:55 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:25:55 info: authMiddleware
+2022-09-11 16:25:55 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:25:55 info: authMiddleware
+2022-09-11 16:25:55 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:25:56 info: authMiddleware
+2022-09-11 16:25:56 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:25:56 info: authMiddleware
+2022-09-11 16:25:56 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:25:56 info: authMiddleware
+2022-09-11 16:25:56 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:25:56 info: authMiddleware
+2022-09-11 16:25:56 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:25:56 info: authMiddleware
+2022-09-11 16:25:56 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:25:57 info: authMiddleware
+2022-09-11 16:25:57 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:25:57 info: authMiddleware
+2022-09-11 16:25:57 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:25:57 info: authMiddleware
+2022-09-11 16:25:57 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:25:57 info: authMiddleware
+2022-09-11 16:25:57 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:25:58 info: authMiddleware
+2022-09-11 16:25:58 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:25:58 info: authMiddleware
+2022-09-11 16:25:58 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:25:58 info: authMiddleware
+2022-09-11 16:25:58 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:25:58 info: authMiddleware
+2022-09-11 16:25:58 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:25:58 info: authMiddleware
+2022-09-11 16:25:58 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:25:58 info: authMiddleware
+2022-09-11 16:25:59 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:25:59 info: authMiddleware
+2022-09-11 16:25:59 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:25:59 info: authMiddleware
+2022-09-11 16:25:59 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:25:59 info: authMiddleware
+2022-09-11 16:25:59 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:25:59 info: authMiddleware
+2022-09-11 16:25:59 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:25:59 info: authMiddleware
+2022-09-11 16:26:00 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:26:00 info: authMiddleware
+2022-09-11 16:26:00 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:26:00 info: authMiddleware
+2022-09-11 16:26:00 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:26:00 info: authMiddleware
+2022-09-11 16:26:00 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:26:00 info: authMiddleware
+2022-09-11 16:26:00 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:26:00 info: authMiddleware
+2022-09-11 16:26:01 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:26:01 info: authMiddleware
+2022-09-11 16:26:01 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:26:01 info: authMiddleware
+2022-09-11 16:26:01 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:26:01 info: authMiddleware
+2022-09-11 16:26:01 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:26:01 info: authMiddleware
+2022-09-11 16:26:01 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:26:02 info: authMiddleware
+2022-09-11 16:26:02 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:26:17 info: =================================
+2022-09-11 16:26:17 info: ======= ENV: development =======
+2022-09-11 16:26:17 info: 🚀 App listening on the port 3005
+2022-09-11 16:26:17 info: 🎮 http://localhost:3005/graphql
+2022-09-11 16:26:17 info: =================================
+2022-09-11 16:26:18 info: authMiddleware
+2022-09-11 16:26:18 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:26:20 info: authMiddleware
+2022-09-11 16:26:20 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:26:20 info: authMiddleware
+2022-09-11 16:26:20 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:26:21 info: authMiddleware
+2022-09-11 16:26:21 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:26:21 info: authMiddleware
+2022-09-11 16:26:21 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:26:21 info: authMiddleware
+2022-09-11 16:26:21 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:26:21 info: authMiddleware
+2022-09-11 16:26:22 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:26:22 info: authMiddleware
+2022-09-11 16:26:22 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:26:28 info: =================================
+2022-09-11 16:26:28 info: ======= ENV: development =======
+2022-09-11 16:26:28 info: 🚀 App listening on the port 3005
+2022-09-11 16:26:28 info: 🎮 http://localhost:3005/graphql
+2022-09-11 16:26:28 info: =================================
+2022-09-11 16:26:36 info: =================================
+2022-09-11 16:26:36 info: ======= ENV: development =======
+2022-09-11 16:26:36 info: 🚀 App listening on the port 3005
+2022-09-11 16:26:36 info: 🎮 http://localhost:3005/graphql
+2022-09-11 16:26:36 info: =================================
+2022-09-11 16:26:36 info: authMiddleware
+2022-09-11 16:26:36 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:26:37 info: authMiddleware
+2022-09-11 16:26:37 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:26:38 info: authMiddleware
+2022-09-11 16:26:38 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:26:39 info: authMiddleware
+2022-09-11 16:26:39 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:26:55 info: =================================
+2022-09-11 16:26:55 info: ======= ENV: development =======
+2022-09-11 16:26:55 info: 🚀 App listening on the port 3005
+2022-09-11 16:26:55 info: 🎮 http://localhost:3005/graphql
+2022-09-11 16:26:55 info: =================================
+2022-09-11 16:26:56 info: authMiddleware
+2022-09-11 16:26:56 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:27:41 info: authMiddleware
+2022-09-11 16:27:42 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:27:42 info: authMiddleware
+2022-09-11 16:27:42 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:27:43 info: authMiddleware
+2022-09-11 16:27:43 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:27:43 info: authMiddleware
+2022-09-11 16:27:43 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:28:14 info: authMiddleware
+2022-09-11 16:28:14 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:28:15 info: authMiddleware
+2022-09-11 16:28:15 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:28:15 info: authMiddleware
+2022-09-11 16:28:15 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:28:15 info: authMiddleware
+2022-09-11 16:28:15 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:28:16 info: authMiddleware
+2022-09-11 16:28:16 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:28:16 info: authMiddleware
+2022-09-11 16:28:16 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:28:16 info: authMiddleware
+2022-09-11 16:28:16 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:28:17 info: authMiddleware
+2022-09-11 16:28:17 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:28:17 info: authMiddleware
+2022-09-11 16:28:17 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:28:17 info: authMiddleware
+2022-09-11 16:28:17 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:28:17 info: authMiddleware
+2022-09-11 16:28:17 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:28:18 info: authMiddleware
+2022-09-11 16:28:18 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:28:18 info: authMiddleware
+2022-09-11 16:28:18 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:28:18 info: authMiddleware
+2022-09-11 16:28:18 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:28:19 info: authMiddleware
+2022-09-11 16:28:19 info: mutation Mutation($userData: CreateUserDto!) {
+
+  login(userData: $userData) {
+    email
+    password
+    id
+  }
+}
+2022-09-11 16:51:54 info: =================================
+2022-09-11 16:51:54 info: ======= ENV: development =======
+2022-09-11 16:51:54 info: 🚀 App listening on the port 3005
+2022-09-11 16:51:54 info: 🎮 http://localhost:3005/graphql
+2022-09-11 16:51:54 info: =================================
+2022-09-11 16:52:09 info: =================================
+2022-09-11 16:52:09 info: ======= ENV: development =======
+2022-09-11 16:52:09 info: 🚀 App listening on the port 3005
+2022-09-11 16:52:09 info: 🎮 http://localhost:3005/graphql
+2022-09-11 16:52:09 info: =================================
+2022-09-11 16:53:46 info: =================================
+2022-09-11 16:53:46 info: ======= ENV: development =======
+2022-09-11 16:53:46 info: 🚀 App listening on the port 3005
+2022-09-11 16:53:46 info: 🎮 http://localhost:3005/graphql
+2022-09-11 16:53:46 info: =================================
+2022-09-11 16:58:53 info: =================================
+2022-09-11 16:58:53 info: ======= ENV: development =======
+2022-09-11 16:58:53 info: 🚀 App listening on the port 3005
+2022-09-11 16:58:53 info: 🎮 http://localhost:3005/graphql
+2022-09-11 16:58:53 info: =================================
+2022-09-11 16:59:06 info: =================================
+2022-09-11 16:59:06 info: ======= ENV: development =======
+2022-09-11 16:59:06 info: 🚀 App listening on the port 3005
+2022-09-11 16:59:06 info: 🎮 http://localhost:3005/graphql
+2022-09-11 16:59:06 info: =================================

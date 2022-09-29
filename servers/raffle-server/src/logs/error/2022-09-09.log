@@ -1,0 +1,68 @@
+2022-09-09 14:27:23 error: uncaughtException: Looks like you use an incorrect version of the 'graphql' package: "16.6.0". Please ensure that you have installed a version that meets TypeGraphQL's requirement: "^15.3.0".
+Error: Looks like you use an incorrect version of the 'graphql' package: "16.6.0". Please ensure that you have installed a version that meets TypeGraphQL's requirement: "^15.3.0".
+    at Object.ensureInstalledCorrectGraphQLPackage (D:\Austin\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_rq55dqxpbhywxwjvxttjguy4yy\node_modules\type-graphql\dist\utils\graphql-version.js:20:15)
+    at Function.checkForErrors (D:\Austin\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_rq55dqxpbhywxwjvxttjguy4yy\node_modules\type-graphql\dist\schema\schema-generator.js:47:27)
+    at Function.generateFromMetadataSync (D:\Austin\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_rq55dqxpbhywxwjvxttjguy4yy\node_modules\type-graphql\dist\schema\schema-generator.js:26:14)
+    at Function.generateFromMetadata (D:\Austin\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_rq55dqxpbhywxwjvxttjguy4yy\node_modules\type-graphql\dist\schema\schema-generator.js:16:29)
+    at buildSchema (D:\Austin\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_rq55dqxpbhywxwjvxttjguy4yy\node_modules\type-graphql\dist\utils\buildSchema.js:10:61)
+    at App.initApolloServer (D:\Austin\CodingFiles\GRAPHQL\first\src\app.ts:66:37)
+    at new App (D:\Austin\CodingFiles\GRAPHQL\first\src\app.ts:30:10)
+    at Object.<anonymous> (D:\Austin\CodingFiles\GRAPHQL\first\src\server.ts:9:13)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Module.m._compile (D:\Austin\CodingFiles\GRAPHQL\first\node_modules\.pnpm\ts-node@10.9.1_gj2m7dhkfp22rdv4cb6jpqoqey\node_modules\ts-node\src\index.ts:1618:23)
+2022-09-09 14:27:23 error: uncaughtException: connect ECONNREFUSED 127.0.0.1:5432
+Error: connect ECONNREFUSED 127.0.0.1:5432
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1161:16)
+2022-09-09 14:46:35 error: uncaughtException: Looks like you use an incorrect version of the 'graphql' package: "16.6.0". Please ensure that you have installed a version that meets TypeGraphQL's requirement: "^15.3.0".
+Error: Looks like you use an incorrect version of the 'graphql' package: "16.6.0". Please ensure that you have installed a version that meets TypeGraphQL's requirement: "^15.3.0".
+    at Object.ensureInstalledCorrectGraphQLPackage (D:\Austin\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_rq55dqxpbhywxwjvxttjguy4yy\node_modules\type-graphql\dist\utils\graphql-version.js:20:15)
+    at Function.checkForErrors (D:\Austin\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_rq55dqxpbhywxwjvxttjguy4yy\node_modules\type-graphql\dist\schema\schema-generator.js:47:27)
+    at Function.generateFromMetadataSync (D:\Austin\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_rq55dqxpbhywxwjvxttjguy4yy\node_modules\type-graphql\dist\schema\schema-generator.js:26:14)
+    at Function.generateFromMetadata (D:\Austin\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_rq55dqxpbhywxwjvxttjguy4yy\node_modules\type-graphql\dist\schema\schema-generator.js:16:29)
+    at buildSchema (D:\Austin\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_rq55dqxpbhywxwjvxttjguy4yy\node_modules\type-graphql\dist\utils\buildSchema.js:10:61)
+    at App.initApolloServer (D:\Austin\CodingFiles\GRAPHQL\first\src\app.ts:66:37)
+    at new App (D:\Austin\CodingFiles\GRAPHQL\first\src\app.ts:30:10)
+    at Object.<anonymous> (D:\Austin\CodingFiles\GRAPHQL\first\src\server.ts:9:13)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Module.m._compile (D:\Austin\CodingFiles\GRAPHQL\first\node_modules\.pnpm\ts-node@10.9.1_gj2m7dhkfp22rdv4cb6jpqoqey\node_modules\ts-node\src\index.ts:1618:23)
+2022-09-09 14:46:56 error: uncaughtException: Looks like you use an incorrect version of the 'graphql' package: "16.6.0". Please ensure that you have installed a version that meets TypeGraphQL's requirement: "^15.3.0".
+Error: Looks like you use an incorrect version of the 'graphql' package: "16.6.0". Please ensure that you have installed a version that meets TypeGraphQL's requirement: "^15.3.0".
+    at Object.ensureInstalledCorrectGraphQLPackage (D:\Austin\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_rq55dqxpbhywxwjvxttjguy4yy\node_modules\type-graphql\dist\utils\graphql-version.js:20:15)
+    at Function.checkForErrors (D:\Austin\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_rq55dqxpbhywxwjvxttjguy4yy\node_modules\type-graphql\dist\schema\schema-generator.js:47:27)
+    at Function.generateFromMetadataSync (D:\Austin\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_rq55dqxpbhywxwjvxttjguy4yy\node_modules\type-graphql\dist\schema\schema-generator.js:26:14)
+    at Function.generateFromMetadata (D:\Austin\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_rq55dqxpbhywxwjvxttjguy4yy\node_modules\type-graphql\dist\schema\schema-generator.js:16:29)
+    at buildSchema (D:\Austin\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_rq55dqxpbhywxwjvxttjguy4yy\node_modules\type-graphql\dist\utils\buildSchema.js:10:61)
+    at App.initApolloServer (D:\Austin\CodingFiles\GRAPHQL\first\src\app.ts:66:37)
+    at new App (D:\Austin\CodingFiles\GRAPHQL\first\src\app.ts:30:10)
+    at Object.<anonymous> (D:\Austin\CodingFiles\GRAPHQL\first\src\server.ts:9:13)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Module.m._compile (D:\Austin\CodingFiles\GRAPHQL\first\node_modules\.pnpm\ts-node@10.9.1_gj2m7dhkfp22rdv4cb6jpqoqey\node_modules\ts-node\src\index.ts:1618:23)
+2022-09-09 14:47:55 error: uncaughtException: Looks like you use an incorrect version of the 'graphql' package: "16.6.0". Please ensure that you have installed a version that meets TypeGraphQL's requirement: "^15.3.0".
+Error: Looks like you use an incorrect version of the 'graphql' package: "16.6.0". Please ensure that you have installed a version that meets TypeGraphQL's requirement: "^15.3.0".
+    at Object.ensureInstalledCorrectGraphQLPackage (D:\Austin\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_rq55dqxpbhywxwjvxttjguy4yy\node_modules\type-graphql\dist\utils\graphql-version.js:20:15)
+    at Function.checkForErrors (D:\Austin\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_rq55dqxpbhywxwjvxttjguy4yy\node_modules\type-graphql\dist\schema\schema-generator.js:47:27)
+    at Function.generateFromMetadataSync (D:\Austin\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_rq55dqxpbhywxwjvxttjguy4yy\node_modules\type-graphql\dist\schema\schema-generator.js:26:14)
+    at Function.generateFromMetadata (D:\Austin\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_rq55dqxpbhywxwjvxttjguy4yy\node_modules\type-graphql\dist\schema\schema-generator.js:16:29)
+    at buildSchema (D:\Austin\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_rq55dqxpbhywxwjvxttjguy4yy\node_modules\type-graphql\dist\utils\buildSchema.js:10:61)
+    at App.initApolloServer (D:\Austin\CodingFiles\GRAPHQL\first\src\app.ts:66:37)
+    at new App (D:\Austin\CodingFiles\GRAPHQL\first\src\app.ts:30:10)
+    at Object.<anonymous> (D:\Austin\CodingFiles\GRAPHQL\first\src\server.ts:9:13)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Module.m._compile (D:\Austin\CodingFiles\GRAPHQL\first\node_modules\.pnpm\ts-node@10.9.1_gj2m7dhkfp22rdv4cb6jpqoqey\node_modules\ts-node\src\index.ts:1618:23)
+2022-09-09 14:50:55 error: uncaughtException: Looks like you use an incorrect version of the 'graphql' package: "16.6.0". Please ensure that you have installed a version that meets TypeGraphQL's requirement: "^15.3.0".
+Error: Looks like you use an incorrect version of the 'graphql' package: "16.6.0". Please ensure that you have installed a version that meets TypeGraphQL's requirement: "^15.3.0".
+    at Object.ensureInstalledCorrectGraphQLPackage (D:\Austin\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_rq55dqxpbhywxwjvxttjguy4yy\node_modules\type-graphql\dist\utils\graphql-version.js:20:15)
+    at Function.checkForErrors (D:\Austin\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_rq55dqxpbhywxwjvxttjguy4yy\node_modules\type-graphql\dist\schema\schema-generator.js:47:27)
+    at Function.generateFromMetadataSync (D:\Austin\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_rq55dqxpbhywxwjvxttjguy4yy\node_modules\type-graphql\dist\schema\schema-generator.js:26:14)
+    at Function.generateFromMetadata (D:\Austin\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_rq55dqxpbhywxwjvxttjguy4yy\node_modules\type-graphql\dist\schema\schema-generator.js:16:29)
+    at buildSchema (D:\Austin\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_rq55dqxpbhywxwjvxttjguy4yy\node_modules\type-graphql\dist\utils\buildSchema.js:10:61)
+    at App.initApolloServer (D:\Austin\CodingFiles\GRAPHQL\first\src\app.ts:66:37)
+    at new App (D:\Austin\CodingFiles\GRAPHQL\first\src\app.ts:30:10)
+    at Object.<anonymous> (D:\Austin\CodingFiles\GRAPHQL\first\src\server.ts:9:13)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Module.m._compile (D:\Austin\CodingFiles\GRAPHQL\first\node_modules\.pnpm\ts-node@10.9.1_gj2m7dhkfp22rdv4cb6jpqoqey\node_modules\ts-node\src\index.ts:1618:23)
+2022-09-09 14:58:59 error: Cannot query field "id" on type "Query".
+2022-09-09 14:59:32 error: Cannot query field "id" on type "Query".
+2022-09-09 14:59:38 error: Cannot query field "id" on type "Query".
+2022-09-09 15:10:17 error: This email bobby@hazyland.com already exists
+2022-09-09 15:29:40 error: No repository for "UserEntity" was found. Looks like this entity is not registered in current "default" connection?

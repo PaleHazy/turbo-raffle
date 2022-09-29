@@ -1,0 +1,336 @@
+2022-09-13 22:32:35 error: uncaughtException: Data type "Object" in "RaffleEntity.raffleItem" is not supported by "postgres" database.
+DataTypeNotSupportedError: Data type "Object" in "RaffleEntity.raffleItem" is not supported by "postgres" database.
+    at DataTypeNotSupportedError.TypeORMError [as constructor] (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\typeorm@0.2.45_pg@8.8.0\node_modules\src\error\TypeORMError.ts:7:9)
+    at new DataTypeNotSupportedError (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\typeorm@0.2.45_pg@8.8.0\node_modules\src\error\DataTypeNotSupportedError.ts:8:9)
+    at C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\typeorm@0.2.45_pg@8.8.0\node_modules\src\metadata-builder\EntityMetadataValidator.ts:89:27
+    at Array.forEach (<anonymous>)
+    at EntityMetadataValidator.validate (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\typeorm@0.2.45_pg@8.8.0\node_modules\src\metadata-builder\EntityMetadataValidator.ts:86:36)
+    at C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\typeorm@0.2.45_pg@8.8.0\node_modules\src\metadata-builder\EntityMetadataValidator.ts:46:56
+    at Array.forEach (<anonymous>)
+    at EntityMetadataValidator.validateMany (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\typeorm@0.2.45_pg@8.8.0\node_modules\src\metadata-builder\EntityMetadataValidator.ts:46:25)
+    at Connection.<anonymous> (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\typeorm@0.2.45_pg@8.8.0\node_modules\src\connection\Connection.ts:533:33)
+    at step (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\tslib@2.4.0\node_modules\tslib\tslib.js:144:27)
+2022-09-13 22:39:09 error: uncaughtException: Data type "Object" in "TicketEntity.raffle" is not supported by "postgres" database.
+DataTypeNotSupportedError: Data type "Object" in "TicketEntity.raffle" is not supported by "postgres" database.
+    at DataTypeNotSupportedError.TypeORMError [as constructor] (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\typeorm@0.2.45_pg@8.8.0\node_modules\src\error\TypeORMError.ts:7:9)
+    at new DataTypeNotSupportedError (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\typeorm@0.2.45_pg@8.8.0\node_modules\src\error\DataTypeNotSupportedError.ts:8:9)
+    at C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\typeorm@0.2.45_pg@8.8.0\node_modules\src\metadata-builder\EntityMetadataValidator.ts:89:27
+    at Array.forEach (<anonymous>)
+    at EntityMetadataValidator.validate (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\typeorm@0.2.45_pg@8.8.0\node_modules\src\metadata-builder\EntityMetadataValidator.ts:86:36)
+    at C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\typeorm@0.2.45_pg@8.8.0\node_modules\src\metadata-builder\EntityMetadataValidator.ts:46:56
+    at Array.forEach (<anonymous>)
+    at EntityMetadataValidator.validateMany (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\typeorm@0.2.45_pg@8.8.0\node_modules\src\metadata-builder\EntityMetadataValidator.ts:46:25)
+    at Connection.<anonymous> (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\typeorm@0.2.45_pg@8.8.0\node_modules\src\connection\Connection.ts:533:33)
+    at step (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\tslib@2.4.0\node_modules\tslib\tslib.js:144:27)
+2022-09-13 22:52:59 error: uncaughtException: Cannot find module '@interfaces/raffle.interface'
+Require stack:
+- C:\Users\palehazy\CodingFiles\GRAPHQL\first\src\entities\tickets.entity.ts
+- C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\typeorm@0.2.45_pg@8.8.0\node_modules\typeorm\util\ImportUtils.js
+- C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\typeorm@0.2.45_pg@8.8.0\node_modules\typeorm\connection\ConnectionOptionsReader.js
+- C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\typeorm@0.2.45_pg@8.8.0\node_modules\typeorm\globals.js
+- C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\typeorm@0.2.45_pg@8.8.0\node_modules\typeorm\index.js
+- C:\Users\palehazy\CodingFiles\GRAPHQL\first\src\app.ts
+- C:\Users\palehazy\CodingFiles\GRAPHQL\first\src\server.ts
+Error: Cannot find module '@interfaces/raffle.interface'
+Require stack:
+- C:\Users\palehazy\CodingFiles\GRAPHQL\first\src\entities\tickets.entity.ts
+- C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\typeorm@0.2.45_pg@8.8.0\node_modules\typeorm\util\ImportUtils.js
+- C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\typeorm@0.2.45_pg@8.8.0\node_modules\typeorm\connection\ConnectionOptionsReader.js
+- C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\typeorm@0.2.45_pg@8.8.0\node_modules\typeorm\globals.js
+- C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\typeorm@0.2.45_pg@8.8.0\node_modules\typeorm\index.js
+- C:\Users\palehazy\CodingFiles\GRAPHQL\first\src\app.ts
+- C:\Users\palehazy\CodingFiles\GRAPHQL\first\src\server.ts
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:955:15)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\@cspotcode+source-map-support@0.8.1\node_modules\@cspotcode\source-map-support\source-map-support.js:811:30)
+    at Function.Module._resolveFilename (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\tsconfig-paths@4.1.0\node_modules\tsconfig-paths\src\register.ts:115:36)
+    at Function.Module._load (node:internal/modules/cjs/loader:803:27)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (C:\Users\palehazy\CodingFiles\GRAPHQL\first\src\entities\tickets.entity.ts:3:1)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module.m._compile (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\ts-node@10.9.1_gj2m7dhkfp22rdv4cb6jpqoqey\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+2022-09-13 22:53:07 error: uncaughtException: Cannot find module '@interfaces/item.interface'
+Require stack:
+- C:\Users\palehazy\CodingFiles\GRAPHQL\first\src\entities\raffles.entity.ts
+- C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\typeorm@0.2.45_pg@8.8.0\node_modules\typeorm\util\ImportUtils.js
+- C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\typeorm@0.2.45_pg@8.8.0\node_modules\typeorm\connection\ConnectionOptionsReader.js
+- C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\typeorm@0.2.45_pg@8.8.0\node_modules\typeorm\globals.js
+- C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\typeorm@0.2.45_pg@8.8.0\node_modules\typeorm\index.js
+- C:\Users\palehazy\CodingFiles\GRAPHQL\first\src\app.ts
+- C:\Users\palehazy\CodingFiles\GRAPHQL\first\src\server.ts
+Error: Cannot find module '@interfaces/item.interface'
+Require stack:
+- C:\Users\palehazy\CodingFiles\GRAPHQL\first\src\entities\raffles.entity.ts
+- C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\typeorm@0.2.45_pg@8.8.0\node_modules\typeorm\util\ImportUtils.js
+- C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\typeorm@0.2.45_pg@8.8.0\node_modules\typeorm\connection\ConnectionOptionsReader.js
+- C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\typeorm@0.2.45_pg@8.8.0\node_modules\typeorm\globals.js
+- C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\typeorm@0.2.45_pg@8.8.0\node_modules\typeorm\index.js
+- C:\Users\palehazy\CodingFiles\GRAPHQL\first\src\app.ts
+- C:\Users\palehazy\CodingFiles\GRAPHQL\first\src\server.ts
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:955:15)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\@cspotcode+source-map-support@0.8.1\node_modules\@cspotcode\source-map-support\source-map-support.js:811:30)
+    at Function.Module._resolveFilename (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\tsconfig-paths@4.1.0\node_modules\tsconfig-paths\src\register.ts:115:36)
+    at Function.Module._load (node:internal/modules/cjs/loader:803:27)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (C:\Users\palehazy\CodingFiles\GRAPHQL\first\src\entities\raffles.entity.ts:4:1)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module.m._compile (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\ts-node@10.9.1_gj2m7dhkfp22rdv4cb6jpqoqey\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+2022-09-13 22:53:18 error: uncaughtException: Cannot find module '@interfaces/item.interface'
+Require stack:
+- C:\Users\palehazy\CodingFiles\GRAPHQL\first\src\entities\raffles.entity.ts
+- C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\typeorm@0.2.45_pg@8.8.0\node_modules\typeorm\util\ImportUtils.js
+- C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\typeorm@0.2.45_pg@8.8.0\node_modules\typeorm\connection\ConnectionOptionsReader.js
+- C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\typeorm@0.2.45_pg@8.8.0\node_modules\typeorm\globals.js
+- C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\typeorm@0.2.45_pg@8.8.0\node_modules\typeorm\index.js
+- C:\Users\palehazy\CodingFiles\GRAPHQL\first\src\app.ts
+- C:\Users\palehazy\CodingFiles\GRAPHQL\first\src\server.ts
+Error: Cannot find module '@interfaces/item.interface'
+Require stack:
+- C:\Users\palehazy\CodingFiles\GRAPHQL\first\src\entities\raffles.entity.ts
+- C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\typeorm@0.2.45_pg@8.8.0\node_modules\typeorm\util\ImportUtils.js
+- C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\typeorm@0.2.45_pg@8.8.0\node_modules\typeorm\connection\ConnectionOptionsReader.js
+- C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\typeorm@0.2.45_pg@8.8.0\node_modules\typeorm\globals.js
+- C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\typeorm@0.2.45_pg@8.8.0\node_modules\typeorm\index.js
+- C:\Users\palehazy\CodingFiles\GRAPHQL\first\src\app.ts
+- C:\Users\palehazy\CodingFiles\GRAPHQL\first\src\server.ts
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:955:15)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\@cspotcode+source-map-support@0.8.1\node_modules\@cspotcode\source-map-support\source-map-support.js:811:30)
+    at Function.Module._resolveFilename (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\tsconfig-paths@4.1.0\node_modules\tsconfig-paths\src\register.ts:115:36)
+    at Function.Module._load (node:internal/modules/cjs/loader:803:27)
+    at Module.require (node:internal/modules/cjs/loader:1021:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (C:\Users\palehazy\CodingFiles\GRAPHQL\first\src\entities\raffles.entity.ts:4:1)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module.m._compile (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\ts-node@10.9.1_gj2m7dhkfp22rdv4cb6jpqoqey\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+2022-09-13 23:16:27 error: uncaughtException: Unable to infer GraphQL type from TypeScript reflection system. You need to provide explicit type for 'tickets' of 'Raffle' class.
+Error: Unable to infer GraphQL type from TypeScript reflection system. You need to provide explicit type for 'tickets' of 'Raffle' class.
+    at Object.findType (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_v2revtygxcm7xrdg2oz3ssohfu\node_modules\type-graphql\dist\helpers\findType.js:19:15)
+    at C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_v2revtygxcm7xrdg2oz3ssohfu\node_modules\type-graphql\dist\decorators\Field.js:16:53
+    at DecorateProperty (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\reflect-metadata@0.1.13\node_modules\reflect-metadata\Reflect.js:553:33)
+    at Reflect.decorate (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\reflect-metadata@0.1.13\node_modules\reflect-metadata\Reflect.js:123:24)
+    at Object.__decorate (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\tslib@2.4.0\node_modules\tslib\tslib.js:99:96)
+    at Object.<anonymous> (C:\Users\palehazy\CodingFiles\GRAPHQL\first\src\typedefs\raffles.type.ts:16:3)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module.m._compile (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\ts-node@10.9.1_gj2m7dhkfp22rdv4cb6jpqoqey\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\ts-node@10.9.1_gj2m7dhkfp22rdv4cb6jpqoqey\node_modules\ts-node\src\index.ts:1621:12)
+2022-09-13 23:17:09 error: uncaughtException: Unable to infer GraphQL type from TypeScript reflection system. You need to provide explicit type for 'tickets' of 'Raffle' class.
+Error: Unable to infer GraphQL type from TypeScript reflection system. You need to provide explicit type for 'tickets' of 'Raffle' class.
+    at Object.findType (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_v2revtygxcm7xrdg2oz3ssohfu\node_modules\type-graphql\dist\helpers\findType.js:19:15)
+    at C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_v2revtygxcm7xrdg2oz3ssohfu\node_modules\type-graphql\dist\decorators\Field.js:16:53
+    at DecorateProperty (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\reflect-metadata@0.1.13\node_modules\reflect-metadata\Reflect.js:553:33)
+    at Reflect.decorate (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\reflect-metadata@0.1.13\node_modules\reflect-metadata\Reflect.js:123:24)
+    at Object.__decorate (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\tslib@2.4.0\node_modules\tslib\tslib.js:99:96)
+    at Object.<anonymous> (C:\Users\palehazy\CodingFiles\GRAPHQL\first\src\typedefs\raffles.type.ts:16:3)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module.m._compile (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\ts-node@10.9.1_gj2m7dhkfp22rdv4cb6jpqoqey\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\ts-node@10.9.1_gj2m7dhkfp22rdv4cb6jpqoqey\node_modules\ts-node\src\index.ts:1621:12)
+2022-09-13 23:18:24 error: uncaughtException: Unable to infer GraphQL type from TypeScript reflection system. You need to provide explicit type for 'tickets' of 'Raffle' class.
+Error: Unable to infer GraphQL type from TypeScript reflection system. You need to provide explicit type for 'tickets' of 'Raffle' class.
+    at Object.findType (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_v2revtygxcm7xrdg2oz3ssohfu\node_modules\type-graphql\dist\helpers\findType.js:19:15)
+    at C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_v2revtygxcm7xrdg2oz3ssohfu\node_modules\type-graphql\dist\decorators\Field.js:16:53
+    at DecorateProperty (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\reflect-metadata@0.1.13\node_modules\reflect-metadata\Reflect.js:553:33)
+    at Reflect.decorate (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\reflect-metadata@0.1.13\node_modules\reflect-metadata\Reflect.js:123:24)
+    at Object.__decorate (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\tslib@2.4.0\node_modules\tslib\tslib.js:99:96)
+    at Object.<anonymous> (C:\Users\palehazy\CodingFiles\GRAPHQL\first\src\typedefs\raffles.type.ts:16:3)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module.m._compile (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\ts-node@10.9.1_gj2m7dhkfp22rdv4cb6jpqoqey\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\ts-node@10.9.1_gj2m7dhkfp22rdv4cb6jpqoqey\node_modules\ts-node\src\index.ts:1621:12)
+2022-09-13 23:19:01 error: uncaughtException: Unable to infer GraphQL type from TypeScript reflection system. You need to provide explicit type for 'tickets' of 'Raffle' class.
+Error: Unable to infer GraphQL type from TypeScript reflection system. You need to provide explicit type for 'tickets' of 'Raffle' class.
+    at Object.findType (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_v2revtygxcm7xrdg2oz3ssohfu\node_modules\type-graphql\dist\helpers\findType.js:19:15)
+    at C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_v2revtygxcm7xrdg2oz3ssohfu\node_modules\type-graphql\dist\decorators\Field.js:16:53
+    at DecorateProperty (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\reflect-metadata@0.1.13\node_modules\reflect-metadata\Reflect.js:553:33)
+    at Reflect.decorate (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\reflect-metadata@0.1.13\node_modules\reflect-metadata\Reflect.js:123:24)
+    at Object.__decorate (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\tslib@2.4.0\node_modules\tslib\tslib.js:99:96)
+    at Object.<anonymous> (C:\Users\palehazy\CodingFiles\GRAPHQL\first\src\typedefs\raffles.type.ts:16:3)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module.m._compile (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\ts-node@10.9.1_gj2m7dhkfp22rdv4cb6jpqoqey\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\ts-node@10.9.1_gj2m7dhkfp22rdv4cb6jpqoqey\node_modules\ts-node\src\index.ts:1621:12)
+2022-09-13 23:19:18 error: uncaughtException: Unable to infer GraphQL type from TypeScript reflection system. You need to provide explicit type for 'tickets' of 'Raffle' class.
+Error: Unable to infer GraphQL type from TypeScript reflection system. You need to provide explicit type for 'tickets' of 'Raffle' class.
+    at Object.findType (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_v2revtygxcm7xrdg2oz3ssohfu\node_modules\type-graphql\dist\helpers\findType.js:19:15)
+    at C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_v2revtygxcm7xrdg2oz3ssohfu\node_modules\type-graphql\dist\decorators\Field.js:16:53
+    at DecorateProperty (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\reflect-metadata@0.1.13\node_modules\reflect-metadata\Reflect.js:553:33)
+    at Reflect.decorate (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\reflect-metadata@0.1.13\node_modules\reflect-metadata\Reflect.js:123:24)
+    at Object.__decorate (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\tslib@2.4.0\node_modules\tslib\tslib.js:99:96)
+    at Object.<anonymous> (C:\Users\palehazy\CodingFiles\GRAPHQL\first\src\typedefs\raffles.type.ts:16:3)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module.m._compile (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\ts-node@10.9.1_gj2m7dhkfp22rdv4cb6jpqoqey\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\ts-node@10.9.1_gj2m7dhkfp22rdv4cb6jpqoqey\node_modules\ts-node\src\index.ts:1621:12)
+2022-09-13 23:19:41 error: uncaughtException: Unable to infer GraphQL type from TypeScript reflection system. You need to provide explicit type for 'tickets' of 'Raffle' class.
+Error: Unable to infer GraphQL type from TypeScript reflection system. You need to provide explicit type for 'tickets' of 'Raffle' class.
+    at Object.findType (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_v2revtygxcm7xrdg2oz3ssohfu\node_modules\type-graphql\dist\helpers\findType.js:19:15)
+    at C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_v2revtygxcm7xrdg2oz3ssohfu\node_modules\type-graphql\dist\decorators\Field.js:16:53
+    at DecorateProperty (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\reflect-metadata@0.1.13\node_modules\reflect-metadata\Reflect.js:553:33)
+    at Reflect.decorate (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\reflect-metadata@0.1.13\node_modules\reflect-metadata\Reflect.js:123:24)
+    at Object.__decorate (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\tslib@2.4.0\node_modules\tslib\tslib.js:99:96)
+    at Object.<anonymous> (C:\Users\palehazy\CodingFiles\GRAPHQL\first\src\typedefs\raffles.type.ts:16:3)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module.m._compile (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\ts-node@10.9.1_gj2m7dhkfp22rdv4cb6jpqoqey\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\ts-node@10.9.1_gj2m7dhkfp22rdv4cb6jpqoqey\node_modules\ts-node\src\index.ts:1621:12)
+2022-09-13 23:19:50 error: uncaughtException: Unable to infer GraphQL type from TypeScript reflection system. You need to provide explicit type for 'tickets' of 'Raffle' class.
+Error: Unable to infer GraphQL type from TypeScript reflection system. You need to provide explicit type for 'tickets' of 'Raffle' class.
+    at Object.findType (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_v2revtygxcm7xrdg2oz3ssohfu\node_modules\type-graphql\dist\helpers\findType.js:19:15)
+    at C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_v2revtygxcm7xrdg2oz3ssohfu\node_modules\type-graphql\dist\decorators\Field.js:16:53
+    at DecorateProperty (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\reflect-metadata@0.1.13\node_modules\reflect-metadata\Reflect.js:553:33)
+    at Reflect.decorate (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\reflect-metadata@0.1.13\node_modules\reflect-metadata\Reflect.js:123:24)
+    at Object.__decorate (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\tslib@2.4.0\node_modules\tslib\tslib.js:99:96)
+    at Object.<anonymous> (C:\Users\palehazy\CodingFiles\GRAPHQL\first\src\typedefs\raffles.type.ts:16:3)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module.m._compile (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\ts-node@10.9.1_gj2m7dhkfp22rdv4cb6jpqoqey\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\ts-node@10.9.1_gj2m7dhkfp22rdv4cb6jpqoqey\node_modules\ts-node\src\index.ts:1621:12)
+2022-09-13 23:19:54 error: uncaughtException: Unable to infer GraphQL type from TypeScript reflection system. You need to provide explicit type for 'tickets' of 'Raffle' class.
+Error: Unable to infer GraphQL type from TypeScript reflection system. You need to provide explicit type for 'tickets' of 'Raffle' class.
+    at Object.findType (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_v2revtygxcm7xrdg2oz3ssohfu\node_modules\type-graphql\dist\helpers\findType.js:19:15)
+    at C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_v2revtygxcm7xrdg2oz3ssohfu\node_modules\type-graphql\dist\decorators\Field.js:16:53
+    at DecorateProperty (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\reflect-metadata@0.1.13\node_modules\reflect-metadata\Reflect.js:553:33)
+    at Reflect.decorate (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\reflect-metadata@0.1.13\node_modules\reflect-metadata\Reflect.js:123:24)
+    at Object.__decorate (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\tslib@2.4.0\node_modules\tslib\tslib.js:99:96)
+    at Object.<anonymous> (C:\Users\palehazy\CodingFiles\GRAPHQL\first\src\typedefs\raffles.type.ts:16:3)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module.m._compile (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\ts-node@10.9.1_gj2m7dhkfp22rdv4cb6jpqoqey\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\ts-node@10.9.1_gj2m7dhkfp22rdv4cb6jpqoqey\node_modules\ts-node\src\index.ts:1621:12)
+2022-09-13 23:19:58 error: uncaughtException: Unable to infer GraphQL type from TypeScript reflection system. You need to provide explicit type for 'tickets' of 'Raffle' class.
+Error: Unable to infer GraphQL type from TypeScript reflection system. You need to provide explicit type for 'tickets' of 'Raffle' class.
+    at Object.findType (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_v2revtygxcm7xrdg2oz3ssohfu\node_modules\type-graphql\dist\helpers\findType.js:19:15)
+    at C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_v2revtygxcm7xrdg2oz3ssohfu\node_modules\type-graphql\dist\decorators\Field.js:16:53
+    at DecorateProperty (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\reflect-metadata@0.1.13\node_modules\reflect-metadata\Reflect.js:553:33)
+    at Reflect.decorate (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\reflect-metadata@0.1.13\node_modules\reflect-metadata\Reflect.js:123:24)
+    at Object.__decorate (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\tslib@2.4.0\node_modules\tslib\tslib.js:99:96)
+    at Object.<anonymous> (C:\Users\palehazy\CodingFiles\GRAPHQL\first\src\typedefs\raffles.type.ts:16:3)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module.m._compile (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\ts-node@10.9.1_gj2m7dhkfp22rdv4cb6jpqoqey\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\ts-node@10.9.1_gj2m7dhkfp22rdv4cb6jpqoqey\node_modules\ts-node\src\index.ts:1621:12)
+2022-09-13 23:20:23 error: uncaughtException: Unable to infer GraphQL type from TypeScript reflection system. You need to provide explicit type for 'tickets' of 'Raffle' class.
+Error: Unable to infer GraphQL type from TypeScript reflection system. You need to provide explicit type for 'tickets' of 'Raffle' class.
+    at Object.findType (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_v2revtygxcm7xrdg2oz3ssohfu\node_modules\type-graphql\dist\helpers\findType.js:19:15)
+    at C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_v2revtygxcm7xrdg2oz3ssohfu\node_modules\type-graphql\dist\decorators\Field.js:16:53
+    at DecorateProperty (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\reflect-metadata@0.1.13\node_modules\reflect-metadata\Reflect.js:553:33)
+    at Reflect.decorate (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\reflect-metadata@0.1.13\node_modules\reflect-metadata\Reflect.js:123:24)
+    at Object.__decorate (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\tslib@2.4.0\node_modules\tslib\tslib.js:99:96)
+    at Object.<anonymous> (C:\Users\palehazy\CodingFiles\GRAPHQL\first\src\typedefs\raffles.type.ts:16:3)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module.m._compile (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\ts-node@10.9.1_gj2m7dhkfp22rdv4cb6jpqoqey\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\ts-node@10.9.1_gj2m7dhkfp22rdv4cb6jpqoqey\node_modules\ts-node\src\index.ts:1621:12)
+2022-09-13 23:20:26 error: uncaughtException: Unable to infer GraphQL type from TypeScript reflection system. You need to provide explicit type for 'tickets' of 'Raffle' class.
+Error: Unable to infer GraphQL type from TypeScript reflection system. You need to provide explicit type for 'tickets' of 'Raffle' class.
+    at Object.findType (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_v2revtygxcm7xrdg2oz3ssohfu\node_modules\type-graphql\dist\helpers\findType.js:19:15)
+    at C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_v2revtygxcm7xrdg2oz3ssohfu\node_modules\type-graphql\dist\decorators\Field.js:16:53
+    at DecorateProperty (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\reflect-metadata@0.1.13\node_modules\reflect-metadata\Reflect.js:553:33)
+    at Reflect.decorate (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\reflect-metadata@0.1.13\node_modules\reflect-metadata\Reflect.js:123:24)
+    at Object.__decorate (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\tslib@2.4.0\node_modules\tslib\tslib.js:99:96)
+    at Object.<anonymous> (C:\Users\palehazy\CodingFiles\GRAPHQL\first\src\typedefs\raffles.type.ts:16:3)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module.m._compile (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\ts-node@10.9.1_gj2m7dhkfp22rdv4cb6jpqoqey\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\ts-node@10.9.1_gj2m7dhkfp22rdv4cb6jpqoqey\node_modules\ts-node\src\index.ts:1621:12)
+2022-09-13 23:20:39 error: uncaughtException: Unable to infer GraphQL type from TypeScript reflection system. You need to provide explicit type for 'tickets' of 'Raffle' class.
+Error: Unable to infer GraphQL type from TypeScript reflection system. You need to provide explicit type for 'tickets' of 'Raffle' class.
+    at Object.findType (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_v2revtygxcm7xrdg2oz3ssohfu\node_modules\type-graphql\dist\helpers\findType.js:19:15)
+    at C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_v2revtygxcm7xrdg2oz3ssohfu\node_modules\type-graphql\dist\decorators\Field.js:16:53
+    at DecorateProperty (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\reflect-metadata@0.1.13\node_modules\reflect-metadata\Reflect.js:553:33)
+    at Reflect.decorate (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\reflect-metadata@0.1.13\node_modules\reflect-metadata\Reflect.js:123:24)
+    at Object.__decorate (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\tslib@2.4.0\node_modules\tslib\tslib.js:99:96)
+    at Object.<anonymous> (C:\Users\palehazy\CodingFiles\GRAPHQL\first\src\typedefs\raffles.type.ts:16:3)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module.m._compile (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\ts-node@10.9.1_gj2m7dhkfp22rdv4cb6jpqoqey\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\ts-node@10.9.1_gj2m7dhkfp22rdv4cb6jpqoqey\node_modules\ts-node\src\index.ts:1621:12)
+2022-09-13 23:20:56 error: uncaughtException: Unable to infer GraphQL type from TypeScript reflection system. You need to provide explicit type for 'tickets' of 'Raffle' class.
+Error: Unable to infer GraphQL type from TypeScript reflection system. You need to provide explicit type for 'tickets' of 'Raffle' class.
+    at Object.findType (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_v2revtygxcm7xrdg2oz3ssohfu\node_modules\type-graphql\dist\helpers\findType.js:19:15)
+    at C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_v2revtygxcm7xrdg2oz3ssohfu\node_modules\type-graphql\dist\decorators\Field.js:16:53
+    at DecorateProperty (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\reflect-metadata@0.1.13\node_modules\reflect-metadata\Reflect.js:553:33)
+    at Reflect.decorate (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\reflect-metadata@0.1.13\node_modules\reflect-metadata\Reflect.js:123:24)
+    at Object.__decorate (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\tslib@2.4.0\node_modules\tslib\tslib.js:99:96)
+    at Object.<anonymous> (C:\Users\palehazy\CodingFiles\GRAPHQL\first\src\typedefs\raffles.type.ts:16:3)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module.m._compile (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\ts-node@10.9.1_gj2m7dhkfp22rdv4cb6jpqoqey\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\ts-node@10.9.1_gj2m7dhkfp22rdv4cb6jpqoqey\node_modules\ts-node\src\index.ts:1621:12)
+2022-09-13 23:23:23 error: uncaughtException: Unable to infer GraphQL type from TypeScript reflection system. You need to provide explicit type for 'tickets' of 'Item' class.
+Error: Unable to infer GraphQL type from TypeScript reflection system. You need to provide explicit type for 'tickets' of 'Item' class.
+    at Object.findType (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_v2revtygxcm7xrdg2oz3ssohfu\node_modules\type-graphql\dist\helpers\findType.js:19:15)
+    at C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_v2revtygxcm7xrdg2oz3ssohfu\node_modules\type-graphql\dist\decorators\Field.js:16:53
+    at DecorateProperty (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\reflect-metadata@0.1.13\node_modules\reflect-metadata\Reflect.js:553:33)
+    at Reflect.decorate (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\reflect-metadata@0.1.13\node_modules\reflect-metadata\Reflect.js:123:24)
+    at Object.__decorate (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\tslib@2.4.0\node_modules\tslib\tslib.js:99:96)
+    at Object.<anonymous> (C:\Users\palehazy\CodingFiles\GRAPHQL\first\src\typedefs\items.type.ts:15:3)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module.m._compile (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\ts-node@10.9.1_gj2m7dhkfp22rdv4cb6jpqoqey\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\ts-node@10.9.1_gj2m7dhkfp22rdv4cb6jpqoqey\node_modules\ts-node\src\index.ts:1621:12)
+2022-09-13 23:23:48 error: uncaughtException: Unable to infer GraphQL type from TypeScript reflection system. You need to provide explicit type for 'tickets' of 'Item' class.
+Error: Unable to infer GraphQL type from TypeScript reflection system. You need to provide explicit type for 'tickets' of 'Item' class.
+    at Object.findType (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_v2revtygxcm7xrdg2oz3ssohfu\node_modules\type-graphql\dist\helpers\findType.js:19:15)
+    at C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_v2revtygxcm7xrdg2oz3ssohfu\node_modules\type-graphql\dist\decorators\Field.js:16:53
+    at DecorateProperty (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\reflect-metadata@0.1.13\node_modules\reflect-metadata\Reflect.js:553:33)
+    at Reflect.decorate (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\reflect-metadata@0.1.13\node_modules\reflect-metadata\Reflect.js:123:24)
+    at Object.__decorate (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\tslib@2.4.0\node_modules\tslib\tslib.js:99:96)
+    at Object.<anonymous> (C:\Users\palehazy\CodingFiles\GRAPHQL\first\src\typedefs\items.type.ts:16:3)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module.m._compile (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\ts-node@10.9.1_gj2m7dhkfp22rdv4cb6jpqoqey\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\ts-node@10.9.1_gj2m7dhkfp22rdv4cb6jpqoqey\node_modules\ts-node\src\index.ts:1621:12)
+2022-09-13 23:25:20 error: uncaughtException: Unable to infer GraphQL type from TypeScript reflection system. You need to provide explicit type for 'raffle' of 'Ticket' class.
+Error: Unable to infer GraphQL type from TypeScript reflection system. You need to provide explicit type for 'raffle' of 'Ticket' class.
+    at Object.findType (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_v2revtygxcm7xrdg2oz3ssohfu\node_modules\type-graphql\dist\helpers\findType.js:19:15)
+    at C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_v2revtygxcm7xrdg2oz3ssohfu\node_modules\type-graphql\dist\decorators\Field.js:16:53
+    at DecorateProperty (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\reflect-metadata@0.1.13\node_modules\reflect-metadata\Reflect.js:553:33)
+    at Reflect.decorate (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\reflect-metadata@0.1.13\node_modules\reflect-metadata\Reflect.js:123:24)
+    at Object.__decorate (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\tslib@2.4.0\node_modules\tslib\tslib.js:99:96)
+    at Object.<anonymous> (C:\Users\palehazy\CodingFiles\GRAPHQL\first\src\typedefs\tickets.type.ts:12:3)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module.m._compile (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\ts-node@10.9.1_gj2m7dhkfp22rdv4cb6jpqoqey\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\ts-node@10.9.1_gj2m7dhkfp22rdv4cb6jpqoqey\node_modules\ts-node\src\index.ts:1621:12)
+2022-09-13 23:25:47 error: uncaughtException: Unable to infer GraphQL type from TypeScript reflection system. You need to provide explicit type for 'raffleItem' of 'Ticket' class.
+Error: Unable to infer GraphQL type from TypeScript reflection system. You need to provide explicit type for 'raffleItem' of 'Ticket' class.
+    at Object.findType (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_v2revtygxcm7xrdg2oz3ssohfu\node_modules\type-graphql\dist\helpers\findType.js:19:15)
+    at C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_v2revtygxcm7xrdg2oz3ssohfu\node_modules\type-graphql\dist\decorators\Field.js:16:53
+    at DecorateProperty (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\reflect-metadata@0.1.13\node_modules\reflect-metadata\Reflect.js:553:33)
+    at Reflect.decorate (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\reflect-metadata@0.1.13\node_modules\reflect-metadata\Reflect.js:123:24)
+    at Object.__decorate (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\tslib@2.4.0\node_modules\tslib\tslib.js:99:96)
+    at Object.<anonymous> (C:\Users\palehazy\CodingFiles\GRAPHQL\first\src\typedefs\tickets.type.ts:15:3)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module.m._compile (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\ts-node@10.9.1_gj2m7dhkfp22rdv4cb6jpqoqey\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\ts-node@10.9.1_gj2m7dhkfp22rdv4cb6jpqoqey\node_modules\ts-node\src\index.ts:1621:12)
+2022-09-13 23:26:28 error: uncaughtException: Unable to infer GraphQL type from TypeScript reflection system. You need to provide explicit type for 'raffleItem' of 'Ticket' class.
+Error: Unable to infer GraphQL type from TypeScript reflection system. You need to provide explicit type for 'raffleItem' of 'Ticket' class.
+    at Object.findType (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_v2revtygxcm7xrdg2oz3ssohfu\node_modules\type-graphql\dist\helpers\findType.js:19:15)
+    at C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_v2revtygxcm7xrdg2oz3ssohfu\node_modules\type-graphql\dist\decorators\Field.js:16:53
+    at DecorateProperty (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\reflect-metadata@0.1.13\node_modules\reflect-metadata\Reflect.js:553:33)
+    at Reflect.decorate (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\reflect-metadata@0.1.13\node_modules\reflect-metadata\Reflect.js:123:24)
+    at Object.__decorate (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\tslib@2.4.0\node_modules\tslib\tslib.js:99:96)
+    at Object.<anonymous> (C:\Users\palehazy\CodingFiles\GRAPHQL\first\src\typedefs\tickets.type.ts:15:3)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module.m._compile (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\ts-node@10.9.1_gj2m7dhkfp22rdv4cb6jpqoqey\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\ts-node@10.9.1_gj2m7dhkfp22rdv4cb6jpqoqey\node_modules\ts-node\src\index.ts:1621:12)
+2022-09-13 23:26:50 error: uncaughtException: Unable to infer GraphQL type from TypeScript reflection system. You need to provide explicit type for 'tickets' of 'Raffle' class.
+Error: Unable to infer GraphQL type from TypeScript reflection system. You need to provide explicit type for 'tickets' of 'Raffle' class.
+    at Object.findType (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_v2revtygxcm7xrdg2oz3ssohfu\node_modules\type-graphql\dist\helpers\findType.js:19:15)
+    at C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\type-graphql@1.1.1_v2revtygxcm7xrdg2oz3ssohfu\node_modules\type-graphql\dist\decorators\Field.js:16:53
+    at DecorateProperty (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\reflect-metadata@0.1.13\node_modules\reflect-metadata\Reflect.js:553:33)
+    at Reflect.decorate (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\reflect-metadata@0.1.13\node_modules\reflect-metadata\Reflect.js:123:24)
+    at Object.__decorate (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\tslib@2.4.0\node_modules\tslib\tslib.js:99:96)
+    at Object.<anonymous> (C:\Users\palehazy\CodingFiles\GRAPHQL\first\src\typedefs\raffles.type.ts:16:3)
+    at Module._compile (node:internal/modules/cjs/loader:1119:14)
+    at Module.m._compile (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\ts-node@10.9.1_gj2m7dhkfp22rdv4cb6jpqoqey\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1173:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\ts-node@10.9.1_gj2m7dhkfp22rdv4cb6jpqoqey\node_modules\ts-node\src\index.ts:1621:12)

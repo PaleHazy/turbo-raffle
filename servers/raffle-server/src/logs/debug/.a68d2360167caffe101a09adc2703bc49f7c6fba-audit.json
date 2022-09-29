@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "D:\\Austin\\CodingFiles\\GRAPHQL\\first\\src\\logs\\debug\\.a68d2360167caffe101a09adc2703bc49f7c6fba-audit.json",
+    "files": [
+        {
+            "date": 1662751642318,
+            "name": "D:\\Austin\\CodingFiles\\GRAPHQL\\first\\src\\logs\\debug\\2022-09-09.log",
+            "hash": "a964168a1911e9f59eea3739c0772170523616e67c7bed270f2ecdf32450e101"
+        }
+    ],
+    "hashType": "sha256"
+}

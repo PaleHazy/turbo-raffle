@@ -1,0 +1,39 @@
+2022-09-10 11:54:01 error: uncaughtException: connect ECONNREFUSED ::1:5432
+Error: connect ECONNREFUSED ::1:5432
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1300:16)
+2022-09-10 11:57:58 error: uncaughtException: password authentication failed for user "postgres"
+error: password authentication failed for user "postgres"
+    at Parser.parseErrorMessage (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\pg-protocol@1.5.0\node_modules\pg-protocol\src\parser.ts:369:69)
+    at Parser.handlePacket (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\pg-protocol@1.5.0\node_modules\pg-protocol\src\parser.ts:188:21)
+    at Parser.parse (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\pg-protocol@1.5.0\node_modules\pg-protocol\src\parser.ts:103:30)
+    at Socket.<anonymous> (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\pg-protocol@1.5.0\node_modules\pg-protocol\src\index.ts:7:48)
+    at Socket.emit (node:events:513:28)
+    at Socket.emit (node:domain:489:12)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Socket.Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+2022-09-10 11:59:00 error: uncaughtException: database "in doccer" does not exist
+error: database "in doccer" does not exist
+    at Parser.parseErrorMessage (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\pg-protocol@1.5.0\node_modules\pg-protocol\src\parser.ts:369:69)
+    at Parser.handlePacket (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\pg-protocol@1.5.0\node_modules\pg-protocol\src\parser.ts:188:21)
+    at Parser.parse (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\pg-protocol@1.5.0\node_modules\pg-protocol\src\parser.ts:103:30)
+    at Socket.<anonymous> (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\pg-protocol@1.5.0\node_modules\pg-protocol\src\index.ts:7:48)
+    at Socket.emit (node:events:513:28)
+    at Socket.emit (node:domain:489:12)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Socket.Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+2022-09-10 11:59:18 error: uncaughtException: database "in doccer" does not exist
+error: database "in doccer" does not exist
+    at Parser.parseErrorMessage (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\pg-protocol@1.5.0\node_modules\pg-protocol\src\parser.ts:369:69)
+    at Parser.handlePacket (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\pg-protocol@1.5.0\node_modules\pg-protocol\src\parser.ts:188:21)
+    at Parser.parse (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\pg-protocol@1.5.0\node_modules\pg-protocol\src\parser.ts:103:30)
+    at Socket.<anonymous> (C:\Users\palehazy\CodingFiles\GRAPHQL\first\node_modules\.pnpm\pg-protocol@1.5.0\node_modules\pg-protocol\src\index.ts:7:48)
+    at Socket.emit (node:events:513:28)
+    at Socket.emit (node:domain:489:12)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Socket.Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
