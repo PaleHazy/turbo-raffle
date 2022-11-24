@@ -55,7 +55,7 @@ class App {
       this.app.use(helmet());
     }
 
-    this.app.use(cors({ origin: "http://localhost:3000", credentials: true }));
+    this.app.use(cors({ origin: "*", credentials: true }));
     this.app.use(compression());
     this.app.use(express.json());
     this.app.use(express.urlencoded({ extended: true }));
@@ -100,7 +100,7 @@ class App {
 
     await apolloServer.start();
     apolloServer.applyMiddleware({ app: this.app, cors: {
-     origin: "http://localhost:3000",
+     origin: "*",
      credentials: true,
     }, path: '/graphql' });
   }
