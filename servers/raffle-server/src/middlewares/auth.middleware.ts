@@ -14,8 +14,8 @@ export const authMiddleware = async req => {
     const Authorization = req.cookies['Authorization'] || (req.header('Authorization') ? req.header('Authorization').split('Bearer ')[1] : null);
     if (Authorization) {
       const secretKey: string = SECRET_KEY;
-      // const { id } = (await verify(Authorization, secretKey)) as DataStoredInToken;
-      const { id } = (await verify("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTY2NDQ3MjE4NiwiZXhwIjoxNjY0NDc1Nzg2fQ.3sl3-EwvkCT_VnqrOFfYSWXreR9-Nj2zoYFTH6VnlIk", secretKey)) as DataStoredInToken;
+      const { id } = (await verify(Authorization, secretKey)) as DataStoredInToken;
+      // const { id } = (await verify("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsImlhdCI6MTY2NDQ3MjE4NiwiZXhwIjoxNjY0NDc1Nzg2fQ.3sl3-EwvkCT_VnqrOFfYSWXreR9-Nj2zoYFTH6VnlIk", secretKey)) as DataStoredInToken;
       console.log('AUTH MIDDLEWARE - COOKIE ID', id)
       const userRepository = getRepository(UserEntity);
 
@@ -24,7 +24,7 @@ export const authMiddleware = async req => {
       console.log('AUTH MIDDLEWARE USER', findUser)
       return findUser;
     }
-    console.log('UNAUTHORIZED')
+    console.log('UNAUTHORIZED, YO')
 
     return null;
   } catch (error) {
