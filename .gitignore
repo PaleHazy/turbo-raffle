@@ -34,7 +34,7 @@ yarn-error.log*
 
 kubernetes/
 servers/raffle-server/data/
-servers/raffle-server/logs/
+servers/raffle-server/src/utils/logs/
 
 
 data/
