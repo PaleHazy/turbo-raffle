@@ -36,7 +36,7 @@ class App {
       logger.info(`=================================`);
       logger.info(`======= ENV: ${this.env} =======`);
       logger.info(`🚀 App listening on the port ${this.port}`);
-      logger.info(`🎮 http://raffle:${this.port}/graphql`);
+      logger.info(`🎮 http://localhost:${this.port}/graphql`);
       logger.info(`=================================`);
     });
   }
