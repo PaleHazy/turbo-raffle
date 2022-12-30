@@ -1,0 +1,41 @@
+# Common build stage
+FROM node:14.14.0-alpine3.12 as common-build-stage
+
+WORKDIR /app
+COPY ./package.json ./
+COPY ./pnpm-lock.yaml ./
+COPY ./pnpm-workspace.yaml ./
+COPY ./turbo.json ./
+
+
+# copying server
+COPY ./servers/raffle-server ./servers/raffle-server/
+# copying packages
+COPY ./packages/interfaces ./packages/interfaces
+COPY ./packages/eslint-config-custom ./packages/eslint-config-custom
+COPY ./packages/tsconfig ./packages/tsconfig
+
+
+
+RUN npm install -g pnpm
+
+RUN pnpm i
+
+EXPOSE 3005
+
+# Development build stage
+FROM common-build-stage as development-build-stage
+
+ENV NODE_ENV development
+ENV LOG_DIR /logs
+ENV PORT 3005
+WORKDIR /app/servers/raffle-server
+
+CMD ["pnpm", "--filter", "raffle-server", "run", "dev:standalone"]
+
+# Production build stage
+FROM common-build-stage as production-build-stage
+
+ENV NODE_ENV production
+
+CMD ["pnpm", "run", "start"]
