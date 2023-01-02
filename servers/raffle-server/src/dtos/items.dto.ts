@@ -1,9 +1,9 @@
-import { Raffle } from '@/typedefs/raffles.type';
+import { Item } from '@/typedefs/items.type';
 import { IsEmail, IsNumber, isString, IsString } from 'class-validator';
 import { InputType, Field } from 'type-graphql';
 
 @InputType()
-export class RaffleDto implements Partial<Raffle> {
+export class ItemDto implements Partial<Item> {
   @Field()
   @IsString()
   name: string;
@@ -11,8 +11,4 @@ export class RaffleDto implements Partial<Raffle> {
   @Field()
   @IsString()
   description: string;
-
-  @Field()
-  @IsNumber()
-  itemId: number;
 }

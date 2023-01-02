@@ -1,4 +1,3 @@
-
 import { Field, ObjectType } from 'type-graphql';
 import { Ticket } from './tickets.type';
 import type { Ticket as T } from 'interfaces';
@@ -12,8 +11,5 @@ export class Item {
 
   @Field()
   description: string;
-
-  @Field(() => [Ticket])
-  tickets: T[];
 
 }

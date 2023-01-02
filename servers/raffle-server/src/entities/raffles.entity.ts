@@ -15,6 +15,8 @@ export class RaffleEntity extends BaseEntity implements Raffle {
   @Column()
   description: string;
 
+
+  @IsNotEmpty()
   @OneToOne(() => ItemEntity)
   @JoinTable()
   raffleItem: ItemEntity;

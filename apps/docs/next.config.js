@@ -1,12 +1,11 @@
-const withTM = require("next-transpile-modules")(["ui"]);
+const withNextra = require('nextra')({
+  theme: 'nextra-theme-docs',
+  themeConfig: './theme.config.tsx',
+  staticImage: true,
+})
 
-module.exports = withTM({
-  reactStrictMode: true,
-  webpack: (config,  { buildId, dev, isServer, defaultLoaders, webpack, typescript }) => {
-
-    config.experiments = {
-    topLevelAwait: true,
-    };
-    return config
-  },
-});
+module.exports = withNextra({
+  images: {
+    unoptimized: true,
+  }
+})

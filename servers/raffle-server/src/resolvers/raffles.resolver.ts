@@ -1,5 +1,6 @@
 import { RaffleDto } from '@/dtos/raffles.dto';
 import { TicketEntity } from '@/entities/tickets.entity';
+import { HttpException } from '@/exceptions/HttpException';
 import RaffleRepository from '@/repositories/raffles.repository';
 import { Raffle } from '@/typedefs/raffles.type';
 import { Ticket } from '@/typedefs/tickets.type';
