@@ -3,6 +3,7 @@
   "designer": "Lesson Designer",
   "player":  "Lesson Player",
   "routes": "API Routes",
+  "database" : "Database",
   "contact": {
     "title": "Contact ↗",
     "type": "page",
