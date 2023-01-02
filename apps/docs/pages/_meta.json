@@ -2,11 +2,7 @@
   "index": "Introduction",
   "designer": "Lesson Designer",
   "player":  "Lesson Player",
-  "advanced": "Advanced (A Folder)",
-  "about": {
-    "title": "About",
-    "type": "page"
-  },
+  "routes": "API Routes",
   "contact": {
     "title": "Contact ↗",
     "type": "page",
