@@ -3,7 +3,7 @@
 <table style={{border: "1px solid white"}}>
     <tr>
         <th colspan="2" style={{colspan: "2",border: "2px solid white"}}>
-            item
+            Item
         </th>
     </tr>    
     <tr>
@@ -16,52 +16,78 @@
     </tr>
     <tr style={{border: "1px solid white"}}>
         <td style={{border: "1px solid white"}}>
-        
+            FK
         </td>
         <td style={{border: "1px solid white"}}>
-            itemname: char(50) NOT NULL
+            raffle_id: int NOT NULL
         </td>
     </tr>
     <tr style={{border: "1px solid white"}}>
         <td style={{border: "1px solid white"}}>
-            
+            FK
         </td>
         <td style={{border: "1px solid white"}}>
-             email: char(50) NOT NULL
+            category_id: int NOT NULL
         </td>
     </tr>
         <tr style={{border: "1px solid white"}}>
         <td style={{border: "1px solid white"}}>
-            
+            FK
         </td>
         <td style={{border: "1px solid white"}}>
-            password: char(50) NOT NULL
+            rarity_id: int NOT NULL
         </td>
     </tr>
         <tr style={{border: "1px solid white"}}>
         <td style={{border: "1px solid white"}}>
-            
+            FK
         </td>
         <td style={{border: "1px solid white"}}>
-            achievements array || NULL
+           group_id: int NOT NULL
         </td>
     </tr>
         <tr style={{border: "1px solid white"}}>
         <td style={{border: "1px solid white"}}>
+            FK
+        </td>
+        <td style={{border: "1px solid white"}}>
+            condition_id: int NOT NULL
+        </td>
+    </tr>
+            <tr style={{border: "1px solid white"}}>
+        <td style={{border: "1px solid white"}}>
+            FK
+        </td>
+        <td style={{border: "1px solid white"}}>
+            color_id: int NOT NULL
+        </td>
+    </tr>
+                <tr style={{border: "1px solid white"}}>
+        <td style={{border: "1px solid white"}}>
+            FK
+        </td>
+        <td style={{border: "1px solid white"}}>
+            holo_id: int NOT NULL
+        </td>
+    </tr>
+                    <tr style={{border: "1px solid white"}}>
+        <td style={{border: "1px solid white"}}>
             
         </td>
         <td style={{border: "1px solid white"}}>
-            currency int NOT NULL
+            tcgp_id: int NOT NULL
         </td>
     </tr>
+    
+    
 </table>
 </div>
 <div style={{padding:"10px"}}>
 
 <table style={{border: "1px solid white"}}>
     <tr>
-        <th colspan="6" style={{colspan: "2",border: "2px solid white"}}>
-            item
+        <th colspan="9" style={{colspan: "2",border: "2px solid white"}}>
+            Item
         </th>
     </tr>    
     <tr>
@@ -69,19 +95,28 @@
             PK
         </td>
         <td width="350" style={{border: "2px solid white"}}>
-            itemname
+            raffle_id
         </td>
                 <td width="350" style={{border: "2px solid white"}}>
-            email
+            category_id
         </td>
                 <td width="350" style={{border: "2px solid white"}}>
-            password
+            rarity_id
                     </td>
                             <td width="350" style={{border: "2px solid white"}}>
-            achievements 
+            group_id
         </td>
                 <td width="350" style={{border: "2px solid white"}}>
-            currency
+            condition_id
+        </td>
+                <td width="350" style={{border: "2px solid white"}}>
+            color_id
+        </td>
+                <td width="350" style={{border: "2px solid white"}}>
+            holo_id
+        </td>
+                <td width="350" style={{border: "2px solid white"}}>
+            tcgp_id
         </td>
     </tr>
     <tr style={{border: "1px solid white"}}>
@@ -89,40 +124,59 @@
             0
         </td>
         <td style={{border: "1px solid white"}}>
-            Xzanos
+            0
         </td>
                 <td style={{border: "1px solid white"}}>
-            xzanos@email.com
+            1
         </td>
         <td style={{border: "1px solid white"}}>
-            "****"
+            1
         </td>
                 <td style={{border: "1px solid white"}}>
-            [1,2,3,4,5,6,7,8,9,10]
+            1
         </td>
                 <td style={{border: "1px solid white"}}>
-            1000000
+            1
+        </td>
+                        <td style={{border: "1px solid white"}}>
+            1
+        </td>
+                        <td style={{border: "1px solid white"}}>
+            1
+        </td>
+                        <td style={{border: "1px solid white"}}>
+            1
         </td>
     </tr>
     <tr style={{border: "1px solid white"}}>
         <td style={{border: "1px solid white"}}>
-            0
+            1
         </td>
         <td style={{border: "1px solid white"}}>
-            PaleHazy
+            1
         </td>
                 <td style={{border: "1px solid white"}}>
-            palehazy@email.com
+            1
         </td>
         <td style={{border: "1px solid white"}}>
-            "****"
+            1
         </td>
                 <td style={{border: "1px solid white"}}>
-            [1,2,3,4,5,6,7,8,9,10]
+            1
         </td>
                 <td style={{border: "1px solid white"}}>
-            1000000
+            1
         </td>
+                        <td style={{border: "1px solid white"}}>
+            1
+        </td>
+                        <td style={{border: "1px solid white"}}>
+            1
+        </td>
+                        <td style={{border: "1px solid white"}}>
+            1
+        </td>
+        
     </tr>
 </table>
 </div>
