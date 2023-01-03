@@ -1,12 +1,9 @@
 {
   "index": "Introduction",
   "user-experience": "User Experience",
-  "currency": "Currency",
-  "raffle": "Raffle",
-  "ticket": "Ticket",
-  "redeem": "Redeem",
-  "achievements": "Achievements",
-  "user": "User",
+  "pages": "Pages",
+  "modals": "Modals",
+  "concepts": "Concepts",
   "routes": "API Routes",
   "database": "Database",
   "contact": {
