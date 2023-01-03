@@ -2,8 +2,7 @@ import { TicketDto } from '@/dtos/tickets.dto';
 import TicketRepository from '@/repositories/tickets.repository';
 import { Ticket } from '@/typedefs/tickets.type';
 import type { Ticket as T } from 'interfaces';
-import { Arg, Mutation, Query, Resolver } from 'type-graphql';
-
+import { Arg, Mutation, Resolver } from 'type-graphql';
 
 @Resolver()
 export class ticketResolver extends TicketRepository {

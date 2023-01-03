@@ -9,14 +9,14 @@ import { isEmpty } from '@utils/util';
 @EntityRepository()
 export default class UserRepository {
   public async userFindAll(): Promise<User[]> {
-    console.log("userFindAll");
+    console.log('userFindAll');
     const users: User[] = await UserEntity.find();
 
     return users;
   }
 
   public async userFindById(userId: number): Promise<User> {
-    if (isEmpty(userId)) throw new HttpException(400, "UserId is empty");
+    if (isEmpty(userId)) throw new HttpException(400, 'UserId is empty');
 
     const user: User = await UserEntity.findOne({ where: { id: userId } });
     if (!user) throw new HttpException(409, "User doesn't exist");
@@ -25,7 +25,7 @@ export default class UserRepository {
   }
 
   public async userCreate(userData: CreateUserDto): Promise<User> {
-    if (isEmpty(userData)) throw new HttpException(400, "userData is empty");
+    if (isEmpty(userData)) throw new HttpException(400, 'userData is empty');
 
     const findUser: User = await UserEntity.findOne({ where: { email: userData.email } });
     if (findUser) throw new HttpException(409, `This email ${userData.email} already exists`);
@@ -37,7 +37,7 @@ export default class UserRepository {
   }
 
   public async userUpdate(userId: number, userData: CreateUserDto): Promise<User> {
-    if (isEmpty(userData)) throw new HttpException(400, "userData is empty");
+    if (isEmpty(userData)) throw new HttpException(400, 'userData is empty');
 
     const findUser: User = await UserEntity.findOne({ where: { id: userId } });
     if (!findUser) throw new HttpException(409, "User doesn't exist");

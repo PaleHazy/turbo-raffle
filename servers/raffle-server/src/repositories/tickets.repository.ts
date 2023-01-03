@@ -7,11 +7,9 @@ import { TicketDto } from '@/dtos/tickets.dto';
 import RaffleRepository from './raffles.repository';
 import { RaffleEntity } from '@/entities/raffles.entity';
 
-
 @EntityRepository()
 export default class TicketRepository {
   // public async raffleFindAll(): Promise<Raffle[]> {
-
 
   // }
 
@@ -25,11 +23,11 @@ export default class TicketRepository {
   // }
 
   public async ticketCreate(ticketData: TicketDto): Promise<Ticket> {
-    if (isEmpty(ticketData)) throw new HttpException(400, "ticketData is empty");
+    if (isEmpty(ticketData)) throw new HttpException(400, 'ticketData is empty');
 
-    console.log("ticketData", ticketData);
+    console.log('ticketData', ticketData);
     // business logic
-    const raffle = await  RaffleEntity.findOne({ where: { id: ticketData.raffleId } });
+    const raffle = await RaffleEntity.findOne({ where: { id: ticketData.raffleId } });
     if (!raffle) throw new HttpException(409, "Raffle doesn't exist");
 
     const ticket = new TicketEntity();

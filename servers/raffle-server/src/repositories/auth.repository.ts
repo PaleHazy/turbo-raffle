@@ -12,7 +12,7 @@ import { ExpressContext } from 'apollo-server-express';
 @EntityRepository(UserEntity)
 export default class AuthRepository {
   public async userSignUp(userData: CreateUserDto): Promise<User> {
-    if (isEmpty(userData)) throw new HttpException(400, "userData is empty");
+    if (isEmpty(userData)) throw new HttpException(400, 'userData is empty');
 
     const findUser: User = await UserEntity.findOne({ where: { email: userData.email } });
     if (findUser) throw new HttpException(409, `This email ${userData.email} already exists`);
@@ -23,14 +23,14 @@ export default class AuthRepository {
     return createUserData;
   }
 
-  public async userLogIn(userData: CreateUserDto, res: ExpressContext["res"]): Promise<{ findUser: User }> {
-    if (isEmpty(userData)) throw new HttpException(400, "userData is empty");
+  public async userLogIn(userData: CreateUserDto, res: ExpressContext['res']): Promise<{ findUser: User }> {
+    if (isEmpty(userData)) throw new HttpException(400, 'userData is empty');
 
     const findUser: User = await UserEntity.findOne({ where: { email: userData.email } });
     if (!findUser) throw new HttpException(409, `This email ${userData.email} was not found`);
 
     const isPasswordMatching: boolean = await compare(userData.password, findUser.password);
-    if (!isPasswordMatching) throw new HttpException(409, "Password is not matching");
+    if (!isPasswordMatching) throw new HttpException(409, 'Password is not matching');
 
     const tokenData = this.createToken(findUser);
     res.cookie('Authorization', tokenData.token, {
@@ -38,13 +38,13 @@ export default class AuthRepository {
       sameSite: 'none',
       // httpOnly: false,
       maxAge: tokenData.expiresIn, // 1 hour
-    })
+    });
 
     return { findUser };
   }
 
   public async userLogOut(userId: number): Promise<User> {
-    if (isEmpty(userId)) throw new HttpException(400, "userId is empty");
+    if (isEmpty(userId)) throw new HttpException(400, 'userId is empty');
 
     const findUser: User = await UserEntity.findOne({ where: { id: userId } });
     if (!findUser) throw new HttpException(409, "User doesn't exist");
@@ -57,7 +57,6 @@ export default class AuthRepository {
     const secretKey: string = SECRET_KEY;
     const expiresIn: number = 60 * 60 * 24 * 7;
 
-    return {expiresIn: expiresIn * 1000, token: sign(dataStoredInToken, secretKey, { expiresIn }) };
+    return { expiresIn: expiresIn * 1000, token: sign(dataStoredInToken, secretKey, { expiresIn }) };
   }
-
 }

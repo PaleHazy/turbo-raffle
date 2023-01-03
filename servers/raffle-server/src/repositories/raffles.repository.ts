@@ -11,11 +11,10 @@ import { ItemEntity } from '@/entities/items.entity';
 export default class RaffleRepository {
   // public async raffleFindAll(): Promise<Raffle[]> {
 
-
   // }
 
   public async raffleFindById(raffleId: number): Promise<Raffle> {
-    if (isEmpty(raffleId)) throw new HttpException(400, "UserId is empty");
+    if (isEmpty(raffleId)) throw new HttpException(400, 'UserId is empty');
 
     const raffle: Raffle = await RaffleEntity.findOne({ where: { id: raffleId } });
     if (!raffle) throw new HttpException(409, "Raffle doesn't exist");
@@ -24,20 +23,20 @@ export default class RaffleRepository {
   }
 
   public async getTickets(raffleId: number): Promise<Ticket[]> {
-    if (isEmpty(raffleId)) throw new HttpException(400, "UserId is empty");
+    if (isEmpty(raffleId)) throw new HttpException(400, 'UserId is empty');
 
     const raffle: Raffle = await RaffleEntity.findOne({ where: { id: raffleId } });
     if (!raffle) throw new HttpException(409, "Raffle doesn't exist");
-    console.log("raffle", raffle);
+    console.log('raffle', raffle);
     const tickets = await TicketEntity.find({
-      relations: ["raffle"],
-    })
-    console.log("tickets", tickets);
+      relations: ['raffle'],
+    });
+    console.log('tickets', tickets);
     return tickets;
   }
 
   public async raffleCreate(raffleData: RaffleDto): Promise<Raffle> {
-    if (isEmpty(raffleData)) throw new HttpException(400, "raffleData is empty");
+    if (isEmpty(raffleData)) throw new HttpException(400, 'raffleData is empty');
 
     const itemId = raffleData.itemId;
     // find the item entity
@@ -49,9 +48,7 @@ export default class RaffleRepository {
     raffle.description = raffleData.description;
     await raffle.save();
     return raffle;
-
   }
-
 
   // public async userUpdate(userId: number, userData: CreateUserDto): Promise<User> {
   //   if (isEmpty(userData)) throw new HttpException(400, "userData is empty");

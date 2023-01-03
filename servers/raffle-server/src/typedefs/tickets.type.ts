@@ -1,4 +1,3 @@
-
 import { Field, ObjectType } from 'type-graphql';
 import { Item } from './items.type';
 import type { Item as I, Raffle as R, Ticket as T } from 'interfaces';
