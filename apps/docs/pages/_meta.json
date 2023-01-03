@@ -1,10 +1,10 @@
 {
   "index": "Introduction",
-  "user-experience": "User Experience",
-  "site layout": "Site Layout",
+  "site_layout": "Site Layout",
   "pages": "Pages",
   "modals": "Modals",
   "concepts": "Concepts",
+  "user-experience": "User Experience",
   "routes": "API Routes",
   "database": "Database",
   "contact": {

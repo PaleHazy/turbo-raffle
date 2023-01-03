@@ -2,7 +2,7 @@
 
 ### Fronted
 
-- `docs`: a [Next.js](https://nextjs.org) app
+- `docs`: a [Next.js](https://nextjs.org) app  https://nextra.site/docs
 - `web`: another [Next.js](https://nextjs.org) app
 
 Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
