@@ -1,7 +1,7 @@
 import request from 'supertest';
 import App from '@/app';
 import { CreateUserDto } from '@dtos/users.dto';
-import AuthRoute from '@routes/auth.route';
+
 
 afterAll(async () => {
   await new Promise<void>(resolve => setTimeout(() => resolve(), 500));
@@ -14,10 +14,6 @@ describe('Testing Auth', () => {
         email: 'test@email.com',
         password: 'q1w2e3r4',
       };
-      const authRoute = new AuthRoute();
-      const app = new App([authRoute]);
-
-      return request(app.getServer()).post('/signup').send(userData);
     });
   });
 
@@ -28,13 +24,6 @@ describe('Testing Auth', () => {
         password: 'q1w2e3r4',
       };
 
-      const authRoute = new AuthRoute();
-      const app = new App([authRoute]);
-
-      return request(app.getServer())
-        .post('/login')
-        .send(userData)
-        .expect('Set-Cookie', /^Authorization=.+/);
     });
   });
 

@@ -2,6 +2,11 @@ import { request, gql, GraphQLClient } from "graphql-request";
 // import { GET_ALL_USERS_QUERYNAME } from "raffle-server/src/resolvers/users.resolver";
 import type { User } from "interfaces";
 
+const graphQLClient = new GraphQLClient("http://localhost:3005/graphql", {
+  credentials: 'include',
+  mode: 'cors',
+})
+
 export async function getAllUsers() {
   const query = gql`
     query AllUsers {
@@ -15,8 +20,8 @@ export async function getAllUsers() {
   type Response = {
     AllUsers: User[];
   };
-  //TODO make modular
-  const res = await request<Response>("http://raffle:3005/graphql", query,);
+  
+  const res = await graphQLClient.request<Response>( query );
   return res;
 }
 
@@ -61,10 +66,7 @@ export async function createUser(email: string, password: string) {
 export async function loginUser(email: string, password: string) {
   
   
-  const graphQLClient = new GraphQLClient("http://localhost:3005/graphql", {
-    credentials: 'include',
-    mode: 'cors',
-  })
+
 
 
   const userData = {

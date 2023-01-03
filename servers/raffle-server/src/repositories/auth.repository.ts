@@ -7,6 +7,7 @@ import { UserEntity } from '@entities/users.entity';
 import { HttpException } from '@exceptions/HttpException';
 import type { User, DataStoredInToken, TokenData } from 'interfaces';
 import { isEmpty } from '@utils/util';
+import { ExpressContext } from 'apollo-server-express';
 
 @EntityRepository(UserEntity)
 export default class AuthRepository {
@@ -22,7 +23,7 @@ export default class AuthRepository {
     return createUserData;
   }
 
-  public async userLogIn(userData: CreateUserDto): Promise<{ cookie: string; findUser: User }> {
+  public async userLogIn(userData: CreateUserDto, res: ExpressContext["res"]): Promise<{ findUser: User }> {
     if (isEmpty(userData)) throw new HttpException(400, "userData is empty");
 
     const findUser: User = await UserEntity.findOne({ where: { email: userData.email } });
@@ -32,9 +33,14 @@ export default class AuthRepository {
     if (!isPasswordMatching) throw new HttpException(409, "Password is not matching");
 
     const tokenData = this.createToken(findUser);
-    const cookie = this.createCookie(tokenData);
+    res.cookie('Authorization', tokenData.token, {
+      secure: true,
+      sameSite: 'none',
+      // httpOnly: false,
+      maxAge: tokenData.expiresIn, // 1 hour
+    })
 
-    return { cookie, findUser };
+    return { findUser };
   }
 
   public async userLogOut(userId: number): Promise<User> {
@@ -49,12 +55,9 @@ export default class AuthRepository {
   public createToken(user: User): TokenData {
     const dataStoredInToken: DataStoredInToken = { id: user.id };
     const secretKey: string = SECRET_KEY;
-    const expiresIn: number = 60 * 60;
+    const expiresIn: number = 60 * 60 * 24 * 7;
 
-    return { expiresIn, token: sign(dataStoredInToken, secretKey, { expiresIn }) };
+    return {expiresIn: expiresIn * 1000, token: sign(dataStoredInToken, secretKey, { expiresIn }) };
   }
 
-  public createCookie(tokenData: TokenData): string {
-    return `Authorization=${tokenData.token}; HttpOnly; Max-Age=${tokenData.expiresIn};`;
-  }
 }

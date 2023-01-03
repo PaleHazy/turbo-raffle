@@ -55,7 +55,7 @@ class App {
       this.app.use(helmet());
     }
 
-    this.app.use(cors({ origin: "*", credentials: true }));
+    this.app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
     this.app.use(compression());
     this.app.use(express.json());
     this.app.use(express.urlencoded({ extended: true }));
@@ -77,6 +77,7 @@ class App {
       ],
       context: async ({ req, res }) => {
         try {
+
           const user = await authMiddleware(req);
           const id = user ? user.id : null;
           const email = user ? user.email : null;
@@ -99,10 +100,15 @@ class App {
     });
 
     await apolloServer.start();
-    apolloServer.applyMiddleware({ app: this.app, cors: {
-     origin: "*",
-     credentials: true,
-    }, path: '/graphql' });
+    apolloServer.applyMiddleware({
+      app: this.app,
+      cors: {
+        origin: 'http://localhost:3000',
+        credentials: true,
+        allowedHeaders: ['Authorization']
+      },
+      path: '/graphql',
+    });
   }
 
   private initializeErrorHandling() {

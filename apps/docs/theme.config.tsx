@@ -16,7 +16,7 @@ const config: DocsThemeConfig = {
   // text: 'Invent',
   // },
   darkMode: true,
-  primaryHue: 127,
+  primaryHue: 200,
   useNextSeoProps() {
     const { route } = useRouter()
     if (route !== '/') {

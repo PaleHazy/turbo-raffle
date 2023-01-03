@@ -23,14 +23,8 @@ export class authResolver extends AuthRepository {
     @Arg('userData') userData: CreateUserDto,
     @Ctx('res') res: ExpressContext["res"],
     ): Promise<User> {
-
-    const { findUser, cookie } = await this.userLogIn(userData);
-    console.log("cookie",cookie)
-
-    res.cookie('Authorization', cookie, {
-      secure: true,
-      sameSite: 'none',
-    })
+    console.log("OIIII")
+    const { findUser  } = await this.userLogIn(userData, res);
     return findUser;
   }
 
