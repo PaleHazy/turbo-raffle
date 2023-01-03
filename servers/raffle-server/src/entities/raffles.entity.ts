@@ -15,12 +15,11 @@ export class RaffleEntity extends BaseEntity implements Raffle {
   @Column()
   description: string;
 
-
   @IsNotEmpty()
   @OneToOne(() => ItemEntity)
   @JoinTable()
   raffleItem: ItemEntity;
 
-  @OneToMany(() => TicketEntity, (ticket) => ticket.raffle)
+  @OneToMany(() => TicketEntity, ticket => ticket.raffle)
   tickets: TicketEntity[];
 }

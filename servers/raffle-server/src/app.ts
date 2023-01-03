@@ -9,7 +9,7 @@ import helmet from 'helmet';
 import hpp from 'hpp';
 import { buildSchema } from 'type-graphql';
 import { createConnection } from 'typeorm';
-import { NODE_ENV, PORT, ORIGIN, CREDENTIALS } from '@config';
+import { NODE_ENV, PORT } from '@config';
 import { dbConnection } from '@databases';
 import { authMiddleware, authChecker } from '@middlewares/auth.middleware';
 import errorMiddleware from '@middlewares/error.middleware';
@@ -77,7 +77,6 @@ class App {
       ],
       context: async ({ req, res }) => {
         try {
-
           const user = await authMiddleware(req);
           const id = user ? user.id : null;
           const email = user ? user.email : null;
@@ -105,7 +104,7 @@ class App {
       cors: {
         origin: 'http://localhost:3000',
         credentials: true,
-        allowedHeaders: ['Authorization']
+        allowedHeaders: ['Authorization'],
       },
       path: '/graphql',
     });

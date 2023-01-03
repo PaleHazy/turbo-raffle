@@ -17,14 +17,10 @@ export class authResolver extends AuthRepository {
 
   @Mutation(() => User, {
     description: 'User login',
-
   })
-  async login(
-    @Arg('userData') userData: CreateUserDto,
-    @Ctx('res') res: ExpressContext["res"],
-    ): Promise<User> {
-    console.log("OIIII")
-    const { findUser  } = await this.userLogIn(userData, res);
+  async login(@Arg('userData') userData: CreateUserDto, @Ctx('res') res: ExpressContext['res']): Promise<User> {
+    console.log('OIIII');
+    const { findUser } = await this.userLogIn(userData, res);
     return findUser;
   }
 

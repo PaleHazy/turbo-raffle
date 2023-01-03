@@ -3,7 +3,7 @@ import { CreateUserDto } from '@dtos/users.dto';
 import UserRepository from '@repositories/users.repository';
 import { User } from '@typedefs/users.type';
 
-export const GET_ALL_USERS_QUERYNAME = 'AllUsers'
+export const GET_ALL_USERS_QUERYNAME = 'AllUsers';
 
 @Resolver()
 export class userResolver extends UserRepository {

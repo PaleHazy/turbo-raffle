@@ -7,4 +7,9 @@ module.exports = {
       rootDir: ["apps/*/"],
     },
   },
+  rules: {
+
+    // This rule is disabled because it is not compatible with Next.js
+    "turbo/no-undeclared-env-vars": "warn",
+  }
 };

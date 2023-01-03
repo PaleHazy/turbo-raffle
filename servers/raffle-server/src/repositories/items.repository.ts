@@ -12,7 +12,6 @@ import { ItemDto } from '@/dtos/items.dto';
 export default class ItemsRepository {
   // public async raffleFindAll(): Promise<Raffle[]> {
 
-
   // }
 
   public async getAllItems(): Promise<ItemEntity[]> {
@@ -21,7 +20,7 @@ export default class ItemsRepository {
   }
 
   public async createItem(itemData: ItemDto): Promise<Item> {
-    if (isEmpty(itemData)) throw new HttpException(400, "ItemData is empty");
+    if (isEmpty(itemData)) throw new HttpException(400, 'ItemData is empty');
 
     const item = new ItemEntity();
     item.name = itemData.name;
@@ -65,7 +64,6 @@ export default class ItemsRepository {
   //   return raffle;
 
   // }
-
 
   // public async userUpdate(userId: number, userData: CreateUserDto): Promise<User> {
   //   if (isEmpty(userData)) throw new HttpException(400, "userData is empty");

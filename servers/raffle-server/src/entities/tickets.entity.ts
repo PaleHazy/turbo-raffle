@@ -10,25 +10,18 @@ export class TicketEntity extends BaseEntity implements Partial<Ticket> {
   @PrimaryGeneratedColumn()
   id: number;
 
-
-
-  @ManyToOne(() => RaffleEntity,(raffle) => raffle.tickets)
+  @ManyToOne(() => RaffleEntity, raffle => raffle.tickets)
   raffle: Raffle;
-
-
 
   @OneToOne(() => ItemEntity)
   @JoinTable()
   raffleItem: Item;
-
-
 
   @OneToOne(() => UserEntity)
   @JoinTable()
   owner: User;
 
   @Column()
-
   valueInDollars: number;
 
   @Column({
