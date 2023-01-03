@@ -1,9 +1,14 @@
 {
   "index": "Introduction",
-  "designer": "Lesson Designer",
-  "player":  "Lesson Player",
+  "user-experience": "User Experience",
+  "currency": "Currency",
+  "raffle": "Raffle",
+  "ticket": "Ticket",
+  "redeem": "Redeem",
+  "achievements": "Achievements",
+  "user": "User",
   "routes": "API Routes",
-  "database" : "Database",
+  "database": "Database",
   "contact": {
     "title": "Contact ↗",
     "type": "page",

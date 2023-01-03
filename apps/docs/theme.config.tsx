@@ -3,9 +3,9 @@ import { DocsThemeConfig } from 'nextra-theme-docs'
 import { useRouter } from 'next/router'
 
 const config: DocsThemeConfig = {
-  logo: <span>Invent</span>,
+  logo: <span>Turbo Raffle</span>,
   footer: {
-    text: 'Invent Documentation',
+    text: 'Turbo Raffle  Documentation',
   },
   search: {
     placeholder: 'Search...',
@@ -13,7 +13,7 @@ const config: DocsThemeConfig = {
   },
   
   // banner: {
-  // text: 'Invent',
+  // text: 'Turbo Raffle ',
   // },
   darkMode: true,
   primaryHue: 200,
@@ -21,7 +21,7 @@ const config: DocsThemeConfig = {
     const { route } = useRouter()
     if (route !== '/') {
       return {
-        titleTemplate: '%s – Invent'
+        titleTemplate: '%s – Turbo Raffle '
       }
     }
   },
