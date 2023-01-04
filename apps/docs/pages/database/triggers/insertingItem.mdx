@@ -1,0 +1,31 @@
+Here is an example of how you could create a trigger that runs when a new row is inserted into a table, and accesses the primary key of the newly inserted row:
+
+```sql
+CREATE OR REPLACE FUNCTION trigger_function()
+RETURNS TRIGGER AS $$
+BEGIN
+  -- access the primary key of the newly inserted row
+  -- (assuming the primary key is an integer column named "id")
+  NEW.id;
+
+  -- insert the primary key into another table as a foreign key
+  INSERT INTO other_table (foreign_key_column) VALUES (NEW.id);
+
+  -- you can also modify the NEW row before it is inserted
+  NEW.column1 = 'new value';
+  
+  RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+CREATE TRIGGER trigger_name
+AFTER INSERT
+ON table_name
+FOR EACH ROW
+EXECUTE PROCEDURE trigger_function();
+```
+The NEW record is a special variable that is available in trigger functions that are executed for INSERT and UPDATE events. It contains the new row that is being inserted or updated, and you can access the columns of the row using dot notation (e.g. NEW.column_name).
+
+In this example, the trigger_function accesses the id column of the NEW row, and then inserts it into another table as a foreign key. You can then use the NEW record to modify the values of the new row before it is inserted into the table.
+
+I hope this helps! Let me know if you have any questions or need more information.

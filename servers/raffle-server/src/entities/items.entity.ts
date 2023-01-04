@@ -3,7 +3,7 @@ import { BaseEntity, Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
 import type { Item } from 'interfaces';
 
 @Entity()
-export class ItemEntity extends BaseEntity implements Item {
+export class ItemEntity extends BaseEntity implements Partial<Item> {
   @PrimaryGeneratedColumn()
   id: number;
 
@@ -15,15 +15,15 @@ export class ItemEntity extends BaseEntity implements Item {
   @IsNotEmpty()
   type: string;
 
-  @Column()
-  @IsNotEmpty()
-  valueInDollars: number;
+  // @Column()
+  // @IsNotEmpty()
+  // valueInDollars: number;
 
-  @Column()
-  @IsNotEmpty()
-  inStock: number;
+  // @Column()
+  // @IsNotEmpty()
+  // inStock: number;
 
-  @Column()
-  @IsNotEmpty()
-  isSold: boolean;
+  // @Column()
+  // @IsNotEmpty()
+  // isSold: boolean;
 }

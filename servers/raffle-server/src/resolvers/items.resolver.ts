@@ -9,8 +9,8 @@ export class itemsResolver extends ItemsRepository {
   @Mutation(() => Item, {
     description: 'Item create',
   })
-  async createItem(@Arg('ticketData') itemData: ItemDto): Promise<I> {
-    const item: I = await this.createItem(itemData);
+  async createItem(@Arg('itemData') itemData: ItemDto): Promise<I> {
+    const item: I = await this.itemCreate(itemData);
     return item;
   }
 }
