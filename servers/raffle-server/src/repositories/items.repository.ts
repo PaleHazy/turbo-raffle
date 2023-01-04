@@ -19,7 +19,7 @@ export default class ItemsRepository {
     return items;
   }
 
-  public async createItem(itemData: ItemDto): Promise<Item> {
+  public async itemCreate(itemData: ItemDto): Promise<Item> {
     if (isEmpty(itemData)) throw new HttpException(400, 'ItemData is empty');
 
     const item = new ItemEntity();

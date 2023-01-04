@@ -55,7 +55,7 @@ class App {
       this.app.use(helmet());
     }
 
-    this.app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
+    this.app.use(cors({ origin: ['http://localhost:3000', 'https://studio.apollographql.com'], credentials: true }));
     this.app.use(compression());
     this.app.use(express.json());
     this.app.use(express.urlencoded({ extended: true }));
@@ -102,7 +102,7 @@ class App {
     apolloServer.applyMiddleware({
       app: this.app,
       cors: {
-        origin: 'http://localhost:3000',
+        origin: ['http://localhost:3000', 'https://studio.apollographql.com'],
         credentials: true,
         allowedHeaders: ['Authorization'],
       },
