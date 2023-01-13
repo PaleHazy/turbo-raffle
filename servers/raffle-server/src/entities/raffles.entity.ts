@@ -1,18 +1,20 @@
 import { IsNotEmpty } from 'class-validator';
-import { BaseEntity, Entity, PrimaryGeneratedColumn, Column, OneToOne, JoinTable, OneToMany, ManyToOne } from 'typeorm';
+import { BaseEntity, Entity, PrimaryGeneratedColumn, Column, OneToOne, JoinTable, OneToMany } from 'typeorm';
 import type { Raffle } from 'interfaces';
 import { ItemEntity } from './items.entity';
 import { TicketEntity } from './tickets.entity';
 
 @Entity()
 export class RaffleEntity extends BaseEntity implements Raffle {
-  @PrimaryGeneratedColumn()
+  @PrimaryGeneratedColumn('uuid', {
+    name: 'raffle_id',
+  })
   id: number;
 
-  @Column()
+  @Column('varchar')
   name: string;
 
-  @Column()
+  @Column('varchar')
   description: string;
 
   @IsNotEmpty()

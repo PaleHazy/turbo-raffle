@@ -1,7 +1,7 @@
 import { join } from 'path';
 import { ConnectionOptions } from 'typeorm';
-import { DB_HOST, DB_PORT, DB_USER, DB_PASSWORD, DB_DATABASE } from '../config';
-import { logger } from '../utils/logger';
+import { DB_HOST, DB_PORT, DB_USER, DB_PASSWORD, DB_DATABASE } from '../src/config';
+import { logger } from '../src/utils/logger';
 
 const dbConnection: ConnectionOptions = {
   type: 'postgres',
@@ -10,7 +10,7 @@ const dbConnection: ConnectionOptions = {
   username: DB_USER,
   password: DB_PASSWORD,
   database: DB_DATABASE,
-  synchronize: true,
+  synchronize: false,
   logging: true,
   logger: {
     log: query => {

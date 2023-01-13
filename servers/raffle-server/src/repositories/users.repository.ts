@@ -1,10 +1,10 @@
 import { hash } from 'bcrypt';
 import { EntityRepository } from 'typeorm';
-import { CreateUserDto } from '@dtos/users.dto';
-import { UserEntity } from '@entities/users.entity';
-import { HttpException } from '@exceptions/HttpException';
+import { CreateUserDto } from '../dtos/users.dto';
+import { UserEntity } from '../entities/users.entity';
+import { HttpException } from '../exceptions/HttpException';
 import type { User } from 'interfaces';
-import { isEmpty } from '@utils/util';
+import { isEmpty } from '../utils/util';
 
 @EntityRepository()
 export default class UserRepository {

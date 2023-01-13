@@ -1,10 +1,11 @@
 import { IsNotEmpty } from 'class-validator';
-import { BaseEntity, Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
+import { BaseEntity, Entity, PrimaryGeneratedColumn, Column, ManyToMany, JoinTable } from 'typeorm';
 import type { Item } from 'interfaces';
+import { CategoryEntity } from './categories.entity';
 
 @Entity()
 export class ItemEntity extends BaseEntity implements Partial<Item> {
-  @PrimaryGeneratedColumn()
+  @PrimaryGeneratedColumn('uuid')
   id: number;
 
   @Column()
@@ -15,15 +16,15 @@ export class ItemEntity extends BaseEntity implements Partial<Item> {
   @IsNotEmpty()
   type: string;
 
-  // @Column()
-  // @IsNotEmpty()
-  // valueInDollars: number;
+  @ManyToMany(() => CategoryEntity)
+  @JoinTable()
+  categories: CategoryEntity[];
 
-  // @Column()
-  // @IsNotEmpty()
-  // inStock: number;
+  @Column()
+  rarity: string;
 
-  // @Column()
-  // @IsNotEmpty()
-  // isSold: boolean;
+  @Column({
+    nullable: true,
+  })
+  group: string;
 }

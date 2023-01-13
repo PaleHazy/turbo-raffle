@@ -10,7 +10,7 @@ import hpp from 'hpp';
 import { buildSchema } from 'type-graphql';
 import { createConnection } from 'typeorm';
 import { NODE_ENV, PORT } from '@config';
-import { dbConnection } from '@databases';
+import dbConnection from '@databases';
 import { authMiddleware, authChecker } from '@middlewares/auth.middleware';
 import errorMiddleware from '@middlewares/error.middleware';
 import { logger, responseLogger, errorLogger } from '@utils/logger';
@@ -46,7 +46,10 @@ class App {
   }
 
   private connectToDatabase() {
-    createConnection(dbConnection);
+    createConnection(dbConnection).then(conn => {
+      logger.info('📦 Connected to database');
+      conn.synchronize();
+    });
   }
 
   private initializeMiddlewares() {
