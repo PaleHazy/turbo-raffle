@@ -1,5 +1,5 @@
 import { Item } from '@/typedefs/items.type';
-import { IsEmail, IsNumber, isString, IsString } from 'class-validator';
+import { IsString } from 'class-validator';
 import { InputType, Field } from 'type-graphql';
 
 @InputType()

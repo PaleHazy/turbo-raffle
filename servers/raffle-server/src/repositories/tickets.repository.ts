@@ -4,7 +4,6 @@ import { isEmpty } from '@utils/util';
 import type { Ticket } from 'interfaces';
 import { TicketEntity } from '@/entities/tickets.entity';
 import { TicketDto } from '@/dtos/tickets.dto';
-import RaffleRepository from './raffles.repository';
 import { RaffleEntity } from '@/entities/raffles.entity';
 
 @EntityRepository()

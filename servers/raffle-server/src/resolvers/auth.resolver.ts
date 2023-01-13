@@ -2,7 +2,6 @@ import { Authorized, Arg, Ctx, Mutation, Resolver } from 'type-graphql';
 import { CreateUserDto } from '@dtos/users.dto';
 import AuthRepository from '@repositories/auth.repository';
 import { User } from '@typedefs/users.type';
-import { logger } from '@/utils/logger';
 import { ExpressContext } from 'apollo-server-express';
 
 @Resolver()

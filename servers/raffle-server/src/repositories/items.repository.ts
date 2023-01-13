@@ -1,10 +1,7 @@
 import { EntityRepository } from 'typeorm';
 import { HttpException } from '../exceptions/HttpException';
 import { isEmpty } from '../utils/util';
-import { RaffleEntity } from '../entities/raffles.entity';
-import { RaffleDto } from '../dtos/raffles.dto';
-import type { Ticket, Raffle, Item } from 'interfaces';
-import { TicketEntity } from '../entities/tickets.entity';
+import type { Item } from 'interfaces';
 import { ItemEntity } from '../entities/items.entity';
 import { ItemDto } from '../dtos/items.dto';
 import { CategoryEntity } from '../entities/categories.entity';

@@ -1,5 +1,4 @@
-import { IsNotEmpty } from 'class-validator';
-import { BaseEntity, Entity, PrimaryGeneratedColumn, Column, OneToOne, JoinTable, ManyToOne, IsNull } from 'typeorm';
+import { BaseEntity, Entity, PrimaryGeneratedColumn, Column, OneToOne, JoinTable, ManyToOne } from 'typeorm';
 import { ItemEntity } from './items.entity';
 import { RaffleEntity } from './raffles.entity';
 import { UserEntity } from './users.entity';
