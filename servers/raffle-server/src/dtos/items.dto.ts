@@ -10,5 +10,5 @@ export class ItemDto implements Partial<Item> {
 
   @Field()
   @IsString()
-  description: string;
+  categoryId?: string;
 }

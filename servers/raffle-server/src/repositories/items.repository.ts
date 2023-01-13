@@ -1,12 +1,13 @@
 import { EntityRepository } from 'typeorm';
-import { HttpException } from '@exceptions/HttpException';
-import { isEmpty } from '@utils/util';
-import { RaffleEntity } from '@/entities/raffles.entity';
-import { RaffleDto } from '@/dtos/raffles.dto';
+import { HttpException } from '../exceptions/HttpException';
+import { isEmpty } from '../utils/util';
+import { RaffleEntity } from '../entities/raffles.entity';
+import { RaffleDto } from '../dtos/raffles.dto';
 import type { Ticket, Raffle, Item } from 'interfaces';
-import { TicketEntity } from '@/entities/tickets.entity';
-import { ItemEntity } from '@/entities/items.entity';
-import { ItemDto } from '@/dtos/items.dto';
+import { TicketEntity } from '../entities/tickets.entity';
+import { ItemEntity } from '../entities/items.entity';
+import { ItemDto } from '../dtos/items.dto';
+import { CategoryEntity } from '../entities/categories.entity';
 
 @EntityRepository()
 export default class ItemsRepository {
@@ -21,70 +22,31 @@ export default class ItemsRepository {
 
   public async itemCreate(itemData: ItemDto): Promise<Item> {
     if (isEmpty(itemData)) throw new HttpException(400, 'ItemData is empty');
-
     const item = new ItemEntity();
-    item.name = itemData.name;
+
+    // if the itemData has category, find the category entity to make sure it exists.
+    // this could be enhanced with some sort of strings to ids mapping instead of a
+    // direct lookup in the database
+    if (itemData.categoryId) {
+      const category = await CategoryEntity.findOne({ where: { category_id: itemData.categoryId } });
+      // const category = await ItemEntity.findOne({ where: { id: itemData.categoryId } });
+      console.log('category', category);
+      if (!category) throw new HttpException(409, "Category doesn't exist");
+
+      item.categories = [category];
+    }
+
+    // make sure items has a valid name
+    if (itemData.name) {
+      item.name = itemData.name;
+    } else {
+      throw new HttpException(400, 'Item name is empty');
+    }
+
+    item.type = 'type3232';
+    item.rarity = 'rarityw545';
+    item.group = 'groupw545';
     await item.save();
     return item;
   }
-  // public async raffleFindById(raffleId: number): Promise<Raffle> {
-  //   if (isEmpty(raffleId)) throw new HttpException(400, "UserId is empty");
-
-  //   const raffle: Raffle = await RaffleEntity.findOne({ where: { id: raffleId } });
-  //   if (!raffle) throw new HttpException(409, "Raffle doesn't exist");
-
-  //   return raffle;
-  // }
-
-  // public async getTickets(raffleId: number): Promise<Ticket[]> {
-  //   if (isEmpty(raffleId)) throw new HttpException(400, "UserId is empty");
-
-  //   const raffle: Raffle = await RaffleEntity.findOne({ where: { id: raffleId } });
-  //   if (!raffle) throw new HttpException(409, "Raffle doesn't exist");
-  //   console.log("raffle", raffle);
-  //   const tickets = await TicketEntity.find({
-  //     relations: ["raffle"],
-  //   })
-  //   console.log("tickets", tickets);
-  //   return tickets;
-  // }
-
-  // public async raffleCreate(raffleData: RaffleDto): Promise<Raffle> {
-  //   if (isEmpty(raffleData)) throw new HttpException(400, "raffleData is empty");
-
-  //   const itemId = raffleData.itemId;
-  //   // find the item entity
-  //   const item = await ItemEntity.findOne({ where: { id: itemId } });
-  //   if (!item) throw new HttpException(409, "Item doesn't exist");
-  //   // business logic
-  //   const raffle = new RaffleEntity();
-  //   raffle.name = raffleData.name;
-  //   raffle.description = raffleData.description;
-  //   await raffle.save();
-  //   return raffle;
-
-  // }
-
-  // public async userUpdate(userId: number, userData: CreateUserDto): Promise<User> {
-  //   if (isEmpty(userData)) throw new HttpException(400, "userData is empty");
-
-  //   const findUser: User = await UserEntity.findOne({ where: { id: userId } });
-  //   if (!findUser) throw new HttpException(409, "User doesn't exist");
-
-  //   const hashedPassword = await hash(userData.password, 10);
-  //   await UserEntity.update(userId, { ...userData, password: hashedPassword });
-
-  //   const updateUser: User = await UserEntity.findOne({ where: { id: userId } });
-  //   return updateUser;
-  // }
-
-  // public async userDelete(userId: number): Promise<User> {
-  //   if (isEmpty(userId)) throw new HttpException(400, "User doesn't existId");
-
-  //   const findUser: User = await UserEntity.findOne({ where: { id: userId } });
-  //   if (!findUser) throw new HttpException(409, "User doesn't exist");
-
-  //   await UserEntity.delete({ id: userId });
-  //   return findUser;
-  // }
 }

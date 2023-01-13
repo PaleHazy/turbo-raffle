@@ -6,13 +6,15 @@ import { TicketEntity } from './tickets.entity';
 
 @Entity()
 export class RaffleEntity extends BaseEntity implements Raffle {
-  @PrimaryGeneratedColumn()
+  @PrimaryGeneratedColumn('uuid', {
+    name: 'raffle_id',
+  })
   id: number;
 
-  @Column()
+  @Column('varchar')
   name: string;
 
-  @Column()
+  @Column('varchar')
   description: string;
 
   @IsNotEmpty()

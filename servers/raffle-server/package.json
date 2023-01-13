@@ -15,7 +15,11 @@
       "lint:fix": "pnpm run lint --fix",
       "deploy:prod": "pnpm run build && pm2 start ecosystem.config.js --only prod",
       "deploy:dev": "pm2 start ecosystem.config.js --only dev",
-      "typeorm": "node -r ts-node/register ./node_modules/typeorm/cli.js --config ./src/databases/index.ts"
+      "typeorm": "node -r ts-node/register ./node_modules/typeorm/cli.js --config ./src/databases/index.ts",
+      "data:addUser": "ts-node --project ./scripts/tsconfig.json  ./scripts/addUser.ts",
+      "data:addCategory": "ts-node --project ./scripts/tsconfig.json  ./scripts/addCategory.ts",
+      "data:addItem": "ts-node --project ./scripts/tsconfig.json  ./scripts/addItem.ts",
+      "data:updateItem": "ts-node --project ./scripts/tsconfig.json  ./scripts/updateItem_removeCategory.ts"
    },
    "dependencies": {
       "apollo-server-core": "^3.10.0",
@@ -31,17 +35,18 @@
       "graphql": "^15.3.0",
       "helmet": "^5.1.1",
       "hpp": "^0.2.3",
+      "interfaces": "workspace:*",
       "jsonwebtoken": "^8.5.1",
+      "mysql": "^2.14.1",
       "pg": "^8.7.3",
       "reflect-metadata": "^0.1.13",
       "type-graphql": "^1.1.1",
       "typeorm": "0.2.45",
       "winston": "^3.8.1",
-      "winston-daily-rotate-file": "^4.7.1",
-      "interfaces": "workspace:*",
-      "mysql": "^2.14.1"
+      "winston-daily-rotate-file": "^4.7.1"
    },
    "devDependencies": {
+      "@faker-js/faker": "^7.6.0",
       "@swc/cli": "^0.1.57",
       "@swc/core": "^1.2.220",
       "@types/bcrypt": "^5.0.0",

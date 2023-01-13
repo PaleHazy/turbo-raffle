@@ -19,23 +19,21 @@
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "importHelpers": true,
-    "baseUrl": "src",
+    "baseUrl": "../",
     "paths": {
-      "@/*": ["*"],
-      "@config": ["config"],
-      "@databases": ["databases"],
-      "@dtos/*": ["dtos/*"],
-      "@entities/*": ["entities/*"],
-      "@exceptions/*": ["exceptions/*"],
-      "@interfaces/*": ["interfaces/*"],
-      "@middlewares/*": ["middlewares/*"],
-      "@repositories/*": ["repositories/*"],
-      "@resolvers/*": ["resolvers/*"],
-      "@typedefs/*": ["typedefs/*"],
-      "@utils/*": ["utils/*"]
+      "@config": ["./src/config"],
+      "@databases": ["./src/databases"],
+      "@dtos/*": ["./src/dtos/*"],
+      "@entities/*": ["./src/entities/*"],
+      "@exceptions/*": ["./src/exceptions/*"],
+      "@interfaces/*": ["./src/interfaces/*"],
+      "@middlewares/*": ["./src/middlewares/*"],
+      "@repositories/*": ["./src/repositories/*"],
+      "@resolvers/*": ["./src/resolvers/*"],
+      "@typedefs/*": ["./src/typedefs/*"],
+      "@utils/*": ["./src/utils/*"]
     }
   },
-  "include": ["src/**/*.ts", "src/**/*.json", ".env" ],
-  "exclude": ["node_modules", "src/http", "src/logs"]
+  "include": ["." ],
 }
 

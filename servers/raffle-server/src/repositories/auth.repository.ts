@@ -1,12 +1,12 @@
 import { hash, compare } from 'bcrypt';
 import { sign } from 'jsonwebtoken';
 import { EntityRepository } from 'typeorm';
-import { SECRET_KEY } from '@config';
-import { CreateUserDto } from '@dtos/users.dto';
-import { UserEntity } from '@entities/users.entity';
-import { HttpException } from '@exceptions/HttpException';
+import { SECRET_KEY } from '../config';
+import { CreateUserDto } from '../dtos/users.dto';
+import { UserEntity } from '../entities/users.entity';
+import { HttpException } from '../exceptions/HttpException';
 import type { User, DataStoredInToken, TokenData } from 'interfaces';
-import { isEmpty } from '@utils/util';
+import { isEmpty } from '../utils/util';
 import { ExpressContext } from 'apollo-server-express';
 
 @EntityRepository(UserEntity)
