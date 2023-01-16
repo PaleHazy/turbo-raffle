@@ -4,7 +4,7 @@ import type { Raffle } from 'interfaces';
 import { ItemEntity } from './items.entity';
 import { TicketEntity } from './tickets.entity';
 
-@Entity()
+@Entity('raffles')
 export class RaffleEntity extends BaseEntity implements Raffle {
   @PrimaryGeneratedColumn('uuid', {
     name: 'raffle_id',

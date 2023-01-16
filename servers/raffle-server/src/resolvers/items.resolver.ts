@@ -20,4 +20,11 @@ export class itemsResolver extends ItemsRepository {
     const items: I = await ItemEntity.findOne({ where: { id: itemId } });
     return items;
   }
+
+  @Query(() => [Item])
+  async allItems(): Promise<I[]> {
+    const items: I[] = await this.getAllItems();
+    console.log('items', items);
+    return items;
+  }
 }

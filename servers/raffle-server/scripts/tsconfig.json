@@ -19,20 +19,7 @@
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "importHelpers": true,
-    "baseUrl": "../",
-    "paths": {
-      "@config": ["./src/config"],
-      "@databases": ["./src/databases"],
-      "@dtos/*": ["./src/dtos/*"],
-      "@entities/*": ["./src/entities/*"],
-      "@exceptions/*": ["./src/exceptions/*"],
-      "@interfaces/*": ["./src/interfaces/*"],
-      "@middlewares/*": ["./src/middlewares/*"],
-      "@repositories/*": ["./src/repositories/*"],
-      "@resolvers/*": ["./src/resolvers/*"],
-      "@typedefs/*": ["./src/typedefs/*"],
-      "@utils/*": ["./src/utils/*"]
-    }
+    "baseUrl": "../"
   },
   "include": ["." ],
 }

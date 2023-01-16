@@ -30,7 +30,7 @@ export default class ItemsRepository {
       console.log('category', category);
       if (!category) throw new HttpException(409, "Category doesn't exist");
 
-      item.categories = [category];
+      item.category = category;
     }
 
     // make sure items has a valid name

@@ -46,10 +46,17 @@ class App {
   }
 
   private connectToDatabase() {
-    createConnection(dbConnection).then(conn => {
-      logger.info('📦 Connected to database');
-      conn.synchronize();
-    });
+    createConnection(dbConnection)
+      .then(conn => {
+        logger.info('📦 Connected to database');
+        conn.synchronize();
+      })
+      .catch(err => {
+        logger.error(err);
+        setTimeout(() => {
+          this.connectToDatabase();
+        }, 5000);
+      });
   }
 
   private initializeMiddlewares() {
